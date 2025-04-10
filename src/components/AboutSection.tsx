@@ -22,7 +22,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="section-padding bg-brand-lightGray">
+    <section id="about" className="section-padding">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title animate-slide-up opacity-0">About Roars & Dongs Limited</h2>
@@ -34,7 +34,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="animate-slide-up opacity-0 animation-delay-200">
             <div className="relative">
-              <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-gray-100">
                 <h3 className="text-xl font-semibold mb-4 text-brand-navy">Who We Are</h3>
                 <p className="text-brand-gray mb-6">
                   Roars and Dongs is a Business Development Service Provision company in Nigeria. We understand the unique challenges and 
@@ -55,7 +55,7 @@ const AboutSection = () => {
             <h3 className="text-2xl font-semibold mb-6 text-brand-navy">Our Core Values</h3>
             <div className="space-y-6">
               {values.map((value, index) => (
-                <div key={index} className="flex">
+                <div key={index} className="flex bg-white/70 backdrop-blur-sm p-4 rounded-lg shadow-sm">
                   <div className="mr-4 text-brand-green">
                     <CheckCircle size={24} />
                   </div>

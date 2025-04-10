@@ -1,9 +1,10 @@
 
 import { Linkedin, Mail, Phone } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const TeamSection = () => {
   return (
-    <section id="team" className="section-padding bg-white">
+    <section id="team" className="section-padding bg-gradient-to-br from-white via-blue-50 to-blue-100">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title animate-slide-up opacity-0">Our Leadership</h2>
@@ -14,12 +15,23 @@ const TeamSection = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up opacity-0 animation-delay-200">
-            <div className="bg-brand-lightGray rounded-xl p-8 shadow-lg relative">
+            <div className="bg-brand-lightGray rounded-xl p-8 shadow-lg relative overflow-hidden">
               <div className="absolute -top-6 -left-6 bg-brand-green text-white p-3 rounded-lg">
                 <span className="font-bold">MD</span>
               </div>
-              <h3 className="text-2xl font-semibold mb-2 text-brand-navy pt-2">ABDULKARIM ZAKARI SADA</h3>
-              <p className="text-brand-blue font-medium mb-4">ACCA, ACA, MSc.</p>
+              
+              <div className="flex flex-col md:flex-row gap-6 items-center mb-6">
+                <Avatar className="w-32 h-32 border-4 border-white shadow-md">
+                  <AvatarImage src="/lovable-uploads/a524de14-8f9f-4c78-9399-dfd33fc13e96.png" alt="ABDULKARIM ZAKARI SADA" />
+                  <AvatarFallback>AZS</AvatarFallback>
+                </Avatar>
+                
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2 text-brand-navy pt-2">ABDULKARIM ZAKARI SADA</h3>
+                  <p className="text-brand-blue font-medium mb-4">ACCA, ACA, MSc.</p>
+                </div>
+              </div>
+              
               <p className="text-brand-gray mb-6">
                 Managing Director with extensive experience in Audit, Assurance, and Tax Advisory, leading Roars & Dongs Limited
                 with a vision for excellence and client success.

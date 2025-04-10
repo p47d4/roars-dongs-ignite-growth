@@ -20,11 +20,17 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <AboutSection />
-        <ServicesSection />
+        <div className="bg-gradient-to-br from-white via-amber-50 to-amber-100">
+          <AboutSection />
+        </div>
+        <div className="bg-gradient-to-tr from-white via-emerald-50 to-green-100">
+          <ServicesSection />
+        </div>
         <ProjectsSection />
         <TeamSection />
-        <ContactSection />
+        <div className="bg-gradient-to-br from-white via-blue-50 to-indigo-100">
+          <ContactSection />
+        </div>
       </main>
       <Footer />
     </div>
