@@ -22,7 +22,7 @@ const TeamSection = () => {
               
               <div className="flex flex-col md:flex-row gap-6 items-center mb-6">
                 <Avatar className="w-32 h-32 border-4 border-white shadow-md">
-                  <AvatarImage src="/lovable-uploads/a524de14-8f9f-4c78-9399-dfd33fc13e96.png" alt="ABDULKARIM ZAKARI SADA" />
+                  <AvatarImage src="/lovable-uploads/dc4392b9-cb69-4c8a-bbd0-af6f39bab8a6.png" alt="ABDULKARIM ZAKARI SADA" />
                   <AvatarFallback>AZS</AvatarFallback>
                 </Avatar>
                 
