@@ -38,7 +38,11 @@ const ServicesSection = () => {
         "Financial Statement Audits",
         "Tax Planning & Compliance",
         "Due Diligence & Forensics",
-        "Financial Modeling & Analysis"
+        "Financial Modeling & Analysis",
+        "Audit & Advisory Services",
+        "Market Research & Analysis",
+        "Operational Optimization",
+        "Risk Assessment & Management"
       ]
     },
     {
@@ -122,14 +126,14 @@ const ServicesSection = () => {
                 <div className="mb-6">{services[activeTab].icon}</div>
                 <h3 className="text-2xl font-semibold mb-4 text-brand-navy">{services[activeTab].title}</h3>
                 <p className="text-brand-gray mb-6">{services[activeTab].description}</p>
-                <ul className="space-y-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   {services[activeTab].points.map((point, index) => (
-                    <li key={index} className="flex items-start">
+                    <div key={index} className="flex items-start">
                       <span className="text-brand-green mr-2">•</span>
-                      <span>{point}</span>
-                    </li>
+                      <span className="text-sm">{point}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
               <div className="bg-gradient-to-br from-brand-green to-brand-blue hidden md:flex items-center justify-center text-white p-10">
                 <div className="max-w-md">
@@ -150,6 +154,23 @@ const ServicesSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+          
+          {/* Detailed Service Sections */}
+          <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div key={index} className="bg-white rounded-lg p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
+                <div className="mb-4">{service.icon}</div>
+                <h4 className="text-lg font-semibold mb-3 text-brand-navy">{service.title}</h4>
+                <p className="text-sm text-brand-gray mb-4">{service.description}</p>
+                <button 
+                  onClick={() => setActiveTab(index)}
+                  className="text-brand-blue hover:text-brand-green transition-colors text-sm font-medium"
+                >
+                  Learn More →
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>

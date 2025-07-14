@@ -1,5 +1,8 @@
 
 import { ArrowRight } from "lucide-react";
+import imvinciLogo from '@/assets/imvinci-logo.png';
+import euphoriaLogo from '@/assets/euphoria-logo.png';
+import courtAppealLogo from '@/assets/court-appeal-logo.png';
 
 const ProjectsSection = () => {
   const projects = [
@@ -8,21 +11,24 @@ const ProjectsSection = () => {
       industry: "Technology",
       scope: "Complete digital transformation including website development, CRM system implementation, and email management solutions.",
       backgroundClass: "bg-blue-50",
-      services: ["Website Development", "CRM Implementation", "Email Management"]
+      services: ["Website Development", "CRM Implementation", "Email Management"],
+      logo: imvinciLogo
     },
     {
       name: "EUPHORIA TRACKVENTORY",
       industry: "Inventory Management",
       scope: "Implementation of Roars & Dongs' Trackventory product as inventory management system for Euphoria to efficiently track ECOWAS cards.",
       backgroundClass: "bg-emerald-50",
-      services: ["Inventory Management System", "ECOWAS Card Tracking", "System Integration"]
+      services: ["Inventory Management System", "ECOWAS Card Tracking", "System Integration"],
+      logo: euphoriaLogo
     },
     {
       name: "COURT OF APPEAL",
       industry: "Government/Judiciary",
       scope: "Comprehensive IT solutions including storage unit inventory management, ICT support ticketing system, and procurement unit asset management.",
       backgroundClass: "bg-purple-50",
-      services: ["Storage Unit Inventory Management", "ICT Support Ticketing System", "Procurement Unit Asset Manager"]
+      services: ["Storage Unit Inventory Management", "ICT Support Ticketing System", "Procurement Unit Asset Manager"],
+      logo: courtAppealLogo
     }
   ];
 
@@ -43,7 +49,7 @@ const ProjectsSection = () => {
               className={`${project.backgroundClass} rounded-xl shadow-lg overflow-hidden transition-all hover:scale-105 hover:shadow-xl border border-gray-200`}
             >
               <div className="p-8">
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between mb-6">
                   <div className="text-xs font-semibold text-brand-blue bg-white px-3 py-1 rounded-full">
                     {project.industry}
                   </div>
@@ -52,7 +58,14 @@ const ProjectsSection = () => {
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-4 text-brand-navy">{project.name}</h3>
+                <div className="flex items-center mb-4">
+                  <img 
+                    src={project.logo} 
+                    alt={`${project.name} logo`}
+                    className="h-12 w-12 mr-4 rounded-lg object-cover"
+                  />
+                  <h3 className="text-2xl font-bold text-brand-navy">{project.name}</h3>
+                </div>
                 <p className="text-brand-gray mb-6 leading-relaxed">{project.scope}</p>
                 
                 <div className="mb-6">
