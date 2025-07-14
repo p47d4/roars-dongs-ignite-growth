@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { 
-  BarChart3, Search, Calculator, FileText, TrendingUp, Settings
+  Code, Shield, Calculator, ShoppingCart, GraduationCap, Building2, Users
 } from "lucide-react";
 
 const ServicesSection = () => {
@@ -9,69 +9,80 @@ const ServicesSection = () => {
   
   const services = [
     {
-      title: "Audit, Assurance & Advisory",
-      icon: <FileText className="h-10 w-10 text-brand-green" />,
-      description: "Our audit and assurance services provide an objective and independent examination of financial records and business operations. We help identify areas of risk and opportunity, ensuring compliance with regulatory requirements and industry standards.",
+      title: "Software Design & Integration",
+      icon: <Code className="h-10 w-10 text-brand-green" />,
+      description: "We design, develop, and integrate custom software solutions that streamline your business operations. From web applications to mobile apps and system integrations, we deliver scalable and robust solutions tailored to your specific requirements.",
+      points: [
+        "Custom Web Application Development",
+        "Mobile App Development",
+        "System Integration & API Development",
+        "Database Design & Management"
+      ]
+    },
+    {
+      title: "I.T & Cybersecurity Services",
+      icon: <Shield className="h-10 w-10 text-brand-green" />,
+      description: "Protect your digital assets with our comprehensive cybersecurity solutions. We provide IT infrastructure management, security assessments, and implementation of robust security measures to safeguard your business from cyber threats.",
+      points: [
+        "IT Infrastructure Management",
+        "Cybersecurity Assessment & Implementation",
+        "Network Security & Monitoring",
+        "Data Protection & Recovery Solutions"
+      ]
+    },
+    {
+      title: "Tax & Audit Advisory",
+      icon: <Calculator className="h-10 w-10 text-brand-green" />,
+      description: "Our comprehensive tax and audit services ensure regulatory compliance while optimizing your financial performance. We provide strategic tax planning, audit services, and financial advisory to help you make informed business decisions.",
       points: [
         "Financial Statement Audits",
-        "Internal Audit Services",
-        "Compliance Audits",
-        "Strategic Business Advisory"
+        "Tax Planning & Compliance",
+        "Due Diligence & Forensics",
+        "Financial Modeling & Analysis"
       ]
     },
     {
-      title: "Due Diligence & Forensics",
-      icon: <Search className="h-10 w-10 text-brand-green" />,
-      description: "Our due diligence services provide a comprehensive evaluation of a business's financial, operational, and legal aspects. We help clients make informed decisions by identifying potential risks and opportunities associated with business transactions.",
+      title: "Procurement & Contracting",
+      icon: <ShoppingCart className="h-10 w-10 text-brand-green" />,
+      description: "Streamline your procurement processes with our expert procurement and contracting services. We help optimize your supply chain, manage vendor relationships, and ensure cost-effective procurement strategies.",
       points: [
-        "Financial Due Diligence",
-        "Operational Due Diligence",
-        "Fraud Investigation",
-        "Digital Forensics"
+        "Procurement Strategy Development",
+        "Vendor Management & Selection",
+        "Contract Negotiation & Management",
+        "Supply Chain Optimization"
       ]
     },
     {
-      title: "Financial Modelling",
-      icon: <Calculator className="h-10 w-10 text-brand-green" />,
-      description: "We develop sophisticated financial models tailored to your business needs. These models help forecast future performance, assess investment opportunities, and evaluate financing options, providing a solid foundation for strategic decision-making.",
+      title: "Training & Capacity Building",
+      icon: <GraduationCap className="h-10 w-10 text-brand-green" />,
+      description: "Empower your team with our comprehensive training and capacity building programs. We offer customized training solutions across various domains to enhance skills, improve productivity, and drive organizational growth.",
       points: [
-        "Financial Forecasting",
-        "Investment Analysis",
-        "Cash Flow Projections",
-        "Funding Assistance"
+        "Professional Skills Development",
+        "Technology Training Programs",
+        "Leadership & Management Training",
+        "Organizational Development"
       ]
     },
     {
-      title: "Market Research & Strategic Planning",
-      icon: <BarChart3 className="h-10 w-10 text-brand-green" />,
-      description: "Our market research services provide actionable insights into market trends, customer behavior, and competitive landscapes. We help businesses identify untapped opportunities, understand consumer needs, and develop effective strategies to gain a competitive edge.",
+      title: "Smart City Solutions",
+      icon: <Building2 className="h-10 w-10 text-brand-green" />,
+      description: "Transform urban environments with our innovative smart city solutions. We design and implement technology-driven solutions that enhance urban planning, improve public services, and create sustainable city ecosystems.",
       points: [
-        "Market Trend Analysis",
-        "Competitive Landscape Evaluation",
-        "Consumer Behavior Studies",
-        "Strategic Business Planning"
+        "Urban Planning & Development",
+        "Smart Infrastructure Solutions",
+        "IoT Implementation for Cities",
+        "Sustainable Technology Integration"
       ]
     },
     {
-      title: "Tax Advisory",
-      icon: <TrendingUp className="h-10 w-10 text-brand-green" />,
-      description: "Our tax advisory services help businesses navigate the complex tax landscape. We provide strategic tax planning, compliance assistance, and advisory services to minimize tax liabilities while ensuring compliance with relevant regulations.",
+      title: "Business Consultation",
+      icon: <Users className="h-10 w-10 text-brand-green" />,
+      description: "Get expert guidance to navigate complex business challenges and identify growth opportunities. Our business consultation services provide strategic insights, operational improvements, and market analysis to drive your business forward.",
       points: [
-        "Tax Planning & Optimization",
-        "Transfer Pricing",
-        "Tax Compliance",
-        "Tax Dispute Resolution"
-      ]
-    },
-    {
-      title: "Operational Optimization",
-      icon: <Settings className="h-10 w-10 text-brand-green" />,
-      description: "We help businesses streamline operations, improve efficiency, and enhance productivity. Our operational optimization services identify bottlenecks, implement best practices, and develop sustainable processes that drive business performance.",
-      points: [
-        "Process Mapping & Analysis",
-        "Efficiency Improvement",
-        "Supply Chain Optimization",
-        "Performance Metrics Development"
+        "Strategic Business Planning",
+        "Market Research & Analysis",
+        "Operational Efficiency Consulting",
+        "Business Process Optimization"
       ]
     }
   ];

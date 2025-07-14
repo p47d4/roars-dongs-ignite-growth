@@ -1,0 +1,220 @@
+import { useParams, Link } from "react-router-dom";
+import { ArrowLeft, Mail, Phone, Linkedin } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Card, CardContent } from "@/components/ui/card";
+
+const TeamMemberDetail = () => {
+  const { memberId } = useParams();
+
+  const teamMembers = {
+    "lukman-ahmed-khalifa": {
+      name: "LUKMAN AHMED KHALIFA",
+      position: "Chief Executive Officer",
+      image: "/lovable-uploads/placeholder-ceo.png",
+      initials: "LAK",
+      email: "lukman@roarsanddongs.com",
+      phone: "+234-XXX-XXX-XXXX",
+      linkedin: "#",
+      bio: "Lukman Ahmed Khalifa serves as the Chief Executive Officer of Roars & Dongs Limited, bringing visionary leadership and strategic insight to drive the company's growth across multiple business verticals. With extensive experience in business development and strategic planning, he leads the organization towards achieving excellence in service delivery and sustainable growth.",
+      expertise: [
+        "Strategic Business Planning",
+        "Corporate Leadership",
+        "Business Development",
+        "Market Expansion",
+        "Organizational Growth"
+      ],
+      experience: "10+ years in executive leadership and business development",
+      education: "MBA in Business Administration, Bachelor's in Business Management",
+      qualifications: undefined,
+      memberships: undefined
+    },
+    "adnan-baba-ahmed": {
+      name: "ADNAN BABA-AHMED",
+      position: "Chief Technology Officer",
+      image: "/lovable-uploads/placeholder-cto.png",
+      initials: "ABA",
+      email: "adnan@roarsanddongs.com",
+      phone: "+234-XXX-XXX-XXXX",
+      linkedin: "#",
+      bio: "Adnan Baba-Ahmed leads our technology initiatives as Chief Technology Officer, driving digital transformation and innovative solutions development. His expertise spans across software development, cybersecurity, and emerging technologies, ensuring that our clients receive cutting-edge solutions that meet their evolving technological needs.",
+      expertise: [
+        "Software Development & Integration",
+        "Cybersecurity Solutions",
+        "Digital Transformation",
+        "Technology Strategy",
+        "System Architecture"
+      ],
+      experience: "8+ years in technology leadership and software development",
+      education: "MSc in Computer Science, Bachelor's in Information Technology",
+      qualifications: undefined,
+      memberships: undefined
+    },
+    "abdulkarim-zakari-sada": {
+      name: "ABDULKARIM ZAKARI SADA",
+      position: "Chief Operating Officer",
+      image: "/lovable-uploads/dc4392b9-cb69-4c8a-bbd0-af6f39bab8a6.png",
+      initials: "AZS",
+      email: "abdyynani@gmail.com",
+      phone: "+2348069030497",
+      linkedin: "#",
+      qualifications: "ACCA, ACA, MSc.",
+      bio: "Abdulkarim Zakari Sada oversees operations as Chief Operating Officer, bringing extensive experience in audit, assurance, and strategic advisory services. With professional qualifications including ACCA, ACA, and MSc. in Professional Accountancy, he ensures operational excellence and regulatory compliance across all business functions.",
+      expertise: [
+        "Audit & Assurance Services",
+        "Tax Advisory & Planning",
+        "Financial Analysis & Modeling",
+        "Operational Excellence",
+        "Regulatory Compliance"
+      ],
+      experience: "5+ years in Audit & Assurance, Tax Advisory spanning across Oil and Gas, Real Estate, Information Technology, NGOs, Pension Fund Administrators, Banks, and other Financial Institutions",
+      education: "MSc. in Professional Accountancy (University of London, Middlesex University)",
+      memberships: [
+        "Member, Institute of Chartered Accountants of Nigeria (ICAN)",
+        "Member, Association of Certified Chartered Accountants (ACCA)",
+        "Holder, Certificate of Finance, Accounting & Business (CFAB)"
+      ]
+    }
+  };
+
+  const member = teamMembers[memberId as keyof typeof teamMembers];
+
+  if (!member) {
+    return (
+      <div className="min-h-screen pt-20 flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-brand-navy mb-4">Team Member Not Found</h1>
+          <Link to="/team" className="text-brand-blue hover:text-brand-green">
+            ← Back to Team
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen pt-20">
+      <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100">
+        <div className="container mx-auto px-4 md:px-6 py-16">
+          <Link 
+            to="/team" 
+            className="inline-flex items-center text-brand-blue hover:text-brand-green mb-8 font-medium"
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Team
+          </Link>
+
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* Profile Card */}
+            <div className="lg:col-span-1">
+              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
+                <CardContent className="p-8 text-center">
+                  <Avatar className="w-32 h-32 mx-auto border-4 border-white shadow-lg mb-6">
+                    <AvatarImage src={member.image} alt={member.name} />
+                    <AvatarFallback className="bg-gradient-to-br from-brand-blue to-brand-green text-white text-2xl font-semibold">
+                      {member.initials}
+                    </AvatarFallback>
+                  </Avatar>
+
+                  <h1 className="text-2xl font-bold text-brand-navy mb-2">{member.name}</h1>
+                  <p className="text-brand-blue font-semibold mb-4">{member.position}</p>
+                  
+                  {member.qualifications && (
+                    <p className="text-brand-gray font-medium mb-6">{member.qualifications}</p>
+                  )}
+
+                  <div className="space-y-4">
+                    <a 
+                      href={`mailto:${member.email}`} 
+                      className="flex items-center justify-center gap-3 bg-brand-blue/10 hover:bg-brand-blue/20 p-3 rounded-lg transition-colors"
+                    >
+                      <Mail className="h-5 w-5 text-brand-blue" />
+                      <span className="text-brand-navy">{member.email}</span>
+                    </a>
+                    
+                    <a 
+                      href={`tel:${member.phone}`} 
+                      className="flex items-center justify-center gap-3 bg-brand-green/10 hover:bg-brand-green/20 p-3 rounded-lg transition-colors"
+                    >
+                      <Phone className="h-5 w-5 text-brand-green" />
+                      <span className="text-brand-navy">{member.phone}</span>
+                    </a>
+                    
+                    <a 
+                      href={member.linkedin} 
+                      className="flex items-center justify-center gap-3 bg-brand-blue/10 hover:bg-brand-blue/20 p-3 rounded-lg transition-colors"
+                    >
+                      <Linkedin className="h-5 w-5 text-brand-blue" />
+                      <span className="text-brand-navy">LinkedIn Profile</span>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Details */}
+            <div className="lg:col-span-2 space-y-8">
+              {/* Bio */}
+              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-bold text-brand-navy mb-4">About</h2>
+                  <p className="text-brand-gray leading-relaxed">{member.bio}</p>
+                </CardContent>
+              </Card>
+
+              {/* Expertise */}
+              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-bold text-brand-navy mb-6">Areas of Expertise</h2>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {member.expertise.map((skill, index) => (
+                      <div key={index} className="flex items-center gap-3 p-3 bg-brand-green/10 rounded-lg">
+                        <div className="w-2 h-2 bg-brand-green rounded-full"></div>
+                        <span className="text-brand-navy font-medium">{skill}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Experience & Education */}
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                  <CardContent className="p-8">
+                    <h2 className="text-xl font-bold text-brand-navy mb-4">Experience</h2>
+                    <p className="text-brand-gray">{member.experience}</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                  <CardContent className="p-8">
+                    <h2 className="text-xl font-bold text-brand-navy mb-4">Education</h2>
+                    <p className="text-brand-gray">{member.education}</p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Professional Memberships (only for Abdulkarim) */}
+              {member.memberships && (
+                <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                  <CardContent className="p-8">
+                    <h2 className="text-xl font-bold text-brand-navy mb-4">Professional Memberships</h2>
+                    <ul className="space-y-2">
+                      {member.memberships.map((membership, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <div className="w-2 h-2 bg-brand-blue rounded-full mt-2"></div>
+                          <span className="text-brand-gray">{membership}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TeamMemberDetail;

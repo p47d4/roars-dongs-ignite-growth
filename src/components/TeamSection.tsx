@@ -1,113 +1,93 @@
 
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Card, CardContent } from "@/components/ui/card";
 
 const TeamSection = () => {
+  const teamMembers = [
+    {
+      id: "lukman-ahmed-khalifa",
+      name: "LUKMAN AHMED KHALIFA",
+      position: "Chief Executive Officer",
+      image: "/lovable-uploads/placeholder-ceo.png",
+      initials: "LAK",
+      description: "Visionary leader driving strategic growth and innovation across all business verticals."
+    },
+    {
+      id: "adnan-baba-ahmed",
+      name: "ADNAN BABA-AHMED",
+      position: "Chief Technology Officer",
+      image: "/lovable-uploads/placeholder-cto.png",
+      initials: "ABA",
+      description: "Technology expert leading digital transformation and innovative solutions development."
+    },
+    {
+      id: "abdulkarim-zakari-sada",
+      name: "ABDULKARIM ZAKARI SADA",
+      position: "Chief Operating Officer",
+      image: "/lovable-uploads/dc4392b9-cb69-4c8a-bbd0-af6f39bab8a6.png",
+      initials: "AZS",
+      description: "Operations specialist with extensive experience in audit, assurance, and strategic advisory.",
+      qualifications: "ACCA, ACA, MSc."
+    }
+  ];
+
   return (
     <section id="team" className="section-padding bg-gradient-to-br from-white via-blue-50 to-blue-100">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="section-title animate-slide-up opacity-0">Our Leadership</h2>
+          <h2 className="section-title animate-slide-up opacity-0">Our Leadership Team</h2>
           <p className="section-subtitle animate-slide-up opacity-0 animation-delay-100">
-            Meet our experienced management team that drives our success.
+            Meet our experienced leadership team driving innovation and excellence across all business domains.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="animate-slide-up opacity-0 animation-delay-200">
-            <div className="bg-brand-lightGray rounded-xl p-8 shadow-lg relative overflow-hidden">
-              <div className="absolute -top-6 -left-6 bg-brand-green text-white p-3 rounded-lg">
-                <span className="font-bold">MD</span>
-              </div>
-              
-              <div className="flex flex-col md:flex-row gap-6 items-center mb-6">
-                <Avatar className="w-32 h-32 border-4 border-white shadow-md">
-                  <AvatarImage src="/lovable-uploads/dc4392b9-cb69-4c8a-bbd0-af6f39bab8a6.png" alt="ABDULKARIM ZAKARI SADA" />
-                  <AvatarFallback>AZS</AvatarFallback>
-                </Avatar>
-                
-                <div>
-                  <h3 className="text-2xl font-semibold mb-2 text-brand-navy pt-2">ABDULKARIM ZAKARI SADA</h3>
-                  <p className="text-brand-blue font-medium mb-4">ACCA, ACA, MSc.</p>
-                </div>
-              </div>
-              
-              <p className="text-brand-gray mb-6">
-                Managing Director with extensive experience in Audit, Assurance, and Tax Advisory, leading Roars & Dongs Limited
-                with a vision for excellence and client success.
-              </p>
-              
-              <div className="space-y-4 mb-6">
-                <div className="flex items-center">
-                  <span className="font-medium text-brand-navy min-w-[120px]">Qualifications:</span>
-                  <span className="text-brand-gray">ACCA, ACA, MSc. in Professional Accountancy</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="font-medium text-brand-navy min-w-[120px]">Experience:</span>
-                  <span className="text-brand-gray">5+ years in Audit & Assurance, Tax Advisory</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="font-medium text-brand-navy min-w-[120px]">Education:</span>
-                  <span className="text-brand-gray">University of London, Middlesex University</span>
-                </div>
-              </div>
-              
-              <div className="flex space-x-4">
-                <a 
-                  href="mailto:abdyynani@gmail.com" 
-                  className="bg-white p-2 rounded-full text-brand-blue hover:text-brand-green transition-colors"
-                  aria-label="Email"
-                >
-                  <Mail size={20} />
-                </a>
-                <a 
-                  href="tel:+2348069030497" 
-                  className="bg-white p-2 rounded-full text-brand-blue hover:text-brand-green transition-colors"
-                  aria-label="Phone"
-                >
-                  <Phone size={20} />
-                </a>
-                <a 
-                  href="#linkedin" 
-                  className="bg-white p-2 rounded-full text-brand-blue hover:text-brand-green transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={20} />
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div className="animate-slide-up opacity-0 animation-delay-300">
-            <h3 className="text-2xl font-semibold mb-6 text-brand-navy">Professional Expertise</h3>
-            
-            <div className="space-y-6">
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green">
-                <h4 className="font-semibold text-lg text-brand-navy mb-2">AUDIT, ASSURANCE & ADVISORY</h4>
-                <p className="text-brand-gray">
-                  More than 5 years experience in Audit & Assurance, spanning across Oil and Gas, Real Estate, 
-                  Information Technology, NGOs, Pension Fund Administrators, Banks, and other Financial Institutions.
-                </p>
-              </div>
-              
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-blue">
-                <h4 className="font-semibold text-lg text-brand-navy mb-2">TAX ADVISORY</h4>
-                <p className="text-brand-gray">
-                  Experienced Tax Consultant specializing in transfer pricing, tax planning, and compliance. 
-                  Successfully implemented tax-efficient structures that yielded notable tax savings for clients.
-                </p>
-              </div>
-              
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green">
-                <h4 className="font-semibold text-lg text-brand-navy mb-2">PROFESSIONAL MEMBERSHIPS</h4>
-                <ul className="text-brand-gray space-y-2">
-                  <li>• Member, Institute of Chartered Accountants of Nigeria (ICAN)</li>
-                  <li>• Member, Association of Certified Chartered Accountants (ACCA)</li>
-                  <li>• Holder, Certificate of Finance, Accounting & Business (CFAB)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up opacity-0 animation-delay-200">
+          {teamMembers.map((member, index) => (
+            <Link
+              key={member.id}
+              to={`/team/${member.id}`}
+              className="group block"
+            >
+              <Card className="h-full bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-105">
+                <CardContent className="p-8 text-center">
+                  <div className="relative mb-6">
+                    <Avatar className="w-24 h-24 mx-auto border-4 border-white shadow-lg">
+                      <AvatarImage src={member.image} alt={member.name} />
+                      <AvatarFallback className="bg-gradient-to-br from-brand-blue to-brand-green text-white text-lg font-semibold">
+                        {member.initials}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="absolute -top-2 -right-2 bg-brand-green text-white text-xs px-2 py-1 rounded-full font-medium">
+                      {member.position.split(' ').map(word => word.charAt(0)).join('')}
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-green transition-colors">
+                    {member.name}
+                  </h3>
+                  
+                  <p className="text-brand-blue font-semibold mb-2">
+                    {member.position}
+                  </p>
+                  
+                  {member.qualifications && (
+                    <p className="text-sm text-brand-gray font-medium mb-3">
+                      {member.qualifications}
+                    </p>
+                  )}
+                  
+                  <p className="text-brand-gray text-sm leading-relaxed">
+                    {member.description}
+                  </p>
+                  
+                  <div className="mt-6 text-brand-blue group-hover:text-brand-green transition-colors">
+                    <span className="text-sm font-medium">View Profile →</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
