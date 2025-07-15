@@ -1,5 +1,6 @@
 
 import { Mail, Phone, MapPin, Linkedin, Facebook, Twitter, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -88,8 +89,8 @@ const Footer = () => {
               &copy; {currentYear} Roars & Dongs Limited. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>

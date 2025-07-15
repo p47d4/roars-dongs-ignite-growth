@@ -13,6 +13,8 @@ import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import TeamMemberDetail from "./pages/team/TeamMemberDetail";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +35,8 @@ const App = () => (
               <Route path="/team" element={<Team />} />
               <Route path="/team/:memberId" element={<TeamMemberDetail />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>

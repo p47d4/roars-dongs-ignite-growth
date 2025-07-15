@@ -50,7 +50,7 @@ const ContactSection = () => {
     try {
       // This would typically be a real API endpoint
       // For demo purposes, we're using a setTimeout to simulate an API call
-      console.log("Sending email to: abdyynani@gmail.com");
+      console.log("Sending email to: info@roarsanddongs.com.ng");
       console.log("Form data:", data);
       
       // In a real implementation, you would send the data to a server endpoint
@@ -213,7 +213,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Email</h4>
-                    <a href="mailto:abdyynani@gmail.com" className="opacity-90 hover:opacity-100">abdyynani@gmail.com</a>
+                    <a href="mailto:info@roarsanddongs.com.ng" className="opacity-90 hover:opacity-100">info@roarsanddongs.com.ng</a>
                   </div>
                 </div>
                 
