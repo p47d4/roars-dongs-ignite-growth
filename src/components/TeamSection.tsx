@@ -17,17 +17,17 @@ const TeamSection = () => {
       id: "adnan-baba-ahmed",
       name: "ADNAN BABA-AHMED",
       position: "Chief Technology Officer",
-      image: "/lovable-uploads/placeholder-cto.png",
+      image: "/lovable-uploads/aba.jpeg",
       initials: "ABA",
       description: "Technology expert leading digital transformation and innovative solutions development."
     },
     {
       id: "abdulkarim-zakari-sada",
       name: "ABDULKARIM ZAKARI SADA",
-      position: "Chief Operating Officer",
+      position: "Chief Financial Officer",
       image: "/lovable-uploads/dc4392b9-cb69-4c8a-bbd0-af6f39bab8a6.png",
       initials: "AZS",
-      description: "Operations specialist with extensive experience in audit, assurance, and strategic advisory.",
+      description: "Financial specialist with extensive experience in audit, assurance, and strategic advisory.",
       qualifications: "ACCA, ACA, MSc."
     }
   ];
@@ -52,7 +52,7 @@ const TeamSection = () => {
               <Card className="h-full bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-105">
                 <CardContent className="p-8 text-center">
                   <div className="relative mb-6">
-                    <Avatar className="w-24 h-24 mx-auto border-4 border-white shadow-lg">
+                    <Avatar className="w-32 h-32 mx-auto border-4 border-white shadow-lg">
                       <AvatarImage src={member.image} alt={member.name} />
                       <AvatarFallback className="bg-gradient-to-br from-brand-blue to-brand-green text-white text-lg font-semibold">
                         {member.initials}

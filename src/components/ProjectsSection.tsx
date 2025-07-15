@@ -2,6 +2,9 @@
 import { ArrowRight } from "lucide-react";
 import imvinciLogo from '@/assets/imvinci-logo.png';
 import euphoriaLogo from '@/assets/euphoria-logo.png';
+import euphoriaPressLogo from '@/assets/euphoria press ltd logo.png';
+import MEFLogo from '@/assets/MEF LOGO.png';
+import pearlyLogo from '@/assets/pearly bleu waters logo.png';
 import courtAppealLogo from '@/assets/court-appeal-logo.png';
 
 const ProjectsSection = () => {
@@ -29,6 +32,47 @@ const ProjectsSection = () => {
       backgroundClass: "bg-purple-50",
       services: ["Storage Unit Inventory Management", "ICT Support Ticketing System", "Procurement Unit Asset Manager"],
       logo: courtAppealLogo
+    },
+    // New projects
+    {
+      name: "GAFAM FARMS LIMITED",
+      industry: "Agriculture",
+      scope: "Market research, feasibility study and financial statement analysis for additional funding.",
+      backgroundClass: "bg-yellow-50",
+      services: ["Market Research", "Feasibility Study", "Financial Statement Analysis"],
+      logo: null
+    },
+    {
+      name: "EL-GIDAD PHARMACEUTICALS LTD",
+      industry: "Pharmacy",
+      scope: "Market research, feasibility study and financial statement analysis for additional funding.",
+      backgroundClass: "bg-blue-50",
+      services: ["Market Research", "Feasibility Study", "Financial Statement Analysis"],
+      logo: null
+    },
+    {
+      name: "PEARLY BLEU WATERS LIMITED",
+      industry: "Oil & Gas",
+      scope: "Feasibility study and financial statement analysis for projects expansion.",
+      backgroundClass: "bg-green-50",
+      services: ["Feasibility Study", "Financial Statement Analysis"],
+      logo: pearlyLogo
+    },
+    {
+      name: "MARYAM ENDOWMENT TRUST FUND",
+      industry: "Charity",
+      scope: "Feasibility study and financial statement analysis for new project execution.",
+      backgroundClass: "bg-violet-50",
+      services: ["Feasibility Study", "Financial Statement Analysis"],
+      logo: MEFLogo
+    },
+    {
+      name: "EUPHORIA PRESS LIMITED",
+      industry: "Prints & Media",
+      scope: "Feasibility study (in collaboration with Ministry of Interior), financial statement analysis and company valuation.",
+      backgroundClass: "bg-pink-50",
+      services: ["Feasibility Study", "Financial Statement Analysis", "Company Valuation"],
+      logo: euphoriaPressLogo
     }
   ];
 
@@ -59,11 +103,14 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="flex items-center mb-4">
-                  <img 
-                    src={project.logo} 
-                    alt={`${project.name} logo`}
-                    className="h-12 w-12 mr-4 rounded-lg object-cover"
-                  />
+                  {project.logo && (
+                    <img 
+                      src={project.logo} 
+                      alt={`${project.name} logo`}
+                      className="h-12 mr-4"
+                      // dont delete this className="h-12 w-12 mr-4 rounded-lg object-cover"
+                    />
+                  )}
                   <h3 className="text-2xl font-bold text-brand-navy">{project.name}</h3>
                 </div>
                 <p className="text-brand-gray mb-6 leading-relaxed">{project.scope}</p>

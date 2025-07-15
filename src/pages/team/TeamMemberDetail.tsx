@@ -12,7 +12,7 @@ const TeamMemberDetail = () => {
       position: "Chief Executive Officer",
       image: "/lovable-uploads/placeholder-ceo.png",
       initials: "LAK",
-      email: "lukman@roarsanddongs.com",
+      email: "lukman@roarsanddongs.com.ng",
       phone: "+234-XXX-XXX-XXXX",
       linkedin: "#",
       bio: "Lukman Ahmed Khalifa serves as the Chief Executive Officer of Roars & Dongs Limited, bringing visionary leadership and strategic insight to drive the company's growth across multiple business verticals. With extensive experience in business development and strategic planning, he leads the organization towards achieving excellence in service delivery and sustainable growth.",
@@ -31,11 +31,11 @@ const TeamMemberDetail = () => {
     "adnan-baba-ahmed": {
       name: "ADNAN BABA-AHMED",
       position: "Chief Technology Officer",
-      image: "/lovable-uploads/placeholder-cto.png",
+      image: "/lovable-uploads/aba.jpeg",
       initials: "ABA",
-      email: "adnan@roarsanddongs.com",
+      email: "adnan@roarsanddongs.com.ng",
       phone: "+234-XXX-XXX-XXXX",
-      linkedin: "#",
+      linkedin: "https://ng.linkedin.com/in/adnan-baba-ahmed-a67101256",
       bio: "Adnan Baba-Ahmed leads our technology initiatives as Chief Technology Officer, driving digital transformation and innovative solutions development. His expertise spans across software development, cybersecurity, and emerging technologies, ensuring that our clients receive cutting-edge solutions that meet their evolving technological needs.",
       expertise: [
         "Software Development & Integration",
@@ -47,18 +47,29 @@ const TeamMemberDetail = () => {
       experience: "8+ years in technology leadership and software development",
       education: "MSc in Computer Science, Bachelor's in Information Technology",
       qualifications: undefined,
-      memberships: undefined
+      memberships: [
+        "Google Cloud Certified - Cloud Digital Leader (2023)",
+        "Certificate in Alternative Investments - iCapital (2023)",
+        "SCRUM.ORG - Professional Scrum Master 1 (2022)",
+        "Oracle Certified Professional - Java SE 17 Developer (2021)",
+        "SCRUM.ORG - Professional Scrum Developer 1 (2021)",
+        "Oracle Cloud Customer Support (2020)",
+        "Generative AI LLMs - NVIDIA Certified Associate (2024)",
+        "AI for All: From Basics to GenAI Practice - NVIDIA Academy (2024)",
+        "Developing a Corporate Information Security Strategy & Roadmap that aligns with business (2023)",
+        "Artificial Intelligence Foundation Certificate - GSDC (2024)"
+      ]
     },
     "abdulkarim-zakari-sada": {
       name: "ABDULKARIM ZAKARI SADA",
-      position: "Chief Operating Officer",
+      position: "Chief Financial Officer",
       image: "/lovable-uploads/dc4392b9-cb69-4c8a-bbd0-af6f39bab8a6.png",
       initials: "AZS",
-      email: "abdyynani@gmail.com",
+      email: "abdulkarim@roarsanddongs.com.ng",
       phone: "+2348069030497",
-      linkedin: "#",
+      linkedin: "https://ng.linkedin.com/in/abdulkarim-zakari-sada",
       qualifications: "ACCA, ACA, MSc.",
-      bio: "Abdulkarim Zakari Sada oversees operations as Chief Operating Officer, bringing extensive experience in audit, assurance, and strategic advisory services. With professional qualifications including ACCA, ACA, and MSc. in Professional Accountancy, he ensures operational excellence and regulatory compliance across all business functions.",
+      bio: "Abdulkarim Zakari Sada oversees operations as Chief Financial Officer, bringing extensive experience in audit, assurance, and strategic advisory services. With professional qualifications including ACCA, ACA, and MSc. in Professional Accountancy, he ensures operational excellence and regulatory compliance across all business functions.",
       expertise: [
         "Audit & Assurance Services",
         "Tax Advisory & Planning",
@@ -108,7 +119,7 @@ const TeamMemberDetail = () => {
             <div className="lg:col-span-1">
               <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
                 <CardContent className="p-8 text-center">
-                  <Avatar className="w-32 h-32 mx-auto border-4 border-white shadow-lg mb-6">
+                  <Avatar className="w-35 h-35 mx-auto border-4 border-white shadow-lg mb-6">
                     <AvatarImage src={member.image} alt={member.name} />
                     <AvatarFallback className="bg-gradient-to-br from-brand-blue to-brand-green text-white text-2xl font-semibold">
                       {member.initials}
@@ -131,13 +142,13 @@ const TeamMemberDetail = () => {
                       <span className="text-brand-navy">{member.email}</span>
                     </a>
                     
-                    <a 
+                    {/* <a 
                       href={`tel:${member.phone}`} 
                       className="flex items-center justify-center gap-3 bg-brand-green/10 hover:bg-brand-green/20 p-3 rounded-lg transition-colors"
                     >
                       <Phone className="h-5 w-5 text-brand-green" />
                       <span className="text-brand-navy">{member.phone}</span>
-                    </a>
+                    </a> */}
                     
                     <a 
                       href={member.linkedin} 
