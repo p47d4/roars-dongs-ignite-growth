@@ -174,6 +174,73 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
+      
+      {/* Products Section */}
+      <div className="bg-white py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="section-title animate-slide-up opacity-0">Our Products</h2>
+            <p className="section-subtitle animate-slide-up opacity-0 animation-delay-100">
+              Innovative software solutions designed to streamline operations and enhance productivity across various industries.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 animate-slide-up opacity-0 animation-delay-200">
+            {[
+              {
+                name: "Trackventory",
+                description: "All Assets Inventory tracking and monitoring platform inclusive of CRM, ERP, Inventory Management, Support Desk, and more.",
+                link: "https://trackventory-web.vercel.app"
+              },
+              {
+                name: "R&D Kiosk",
+                description: "A self-service kiosk solution designed for all industries to enhance efficiency and user experience.",
+                link: null
+              },
+              {
+                name: "Shoota Simulation",
+                description: "An immersive simulation software designed for shooting training and practice.",
+                link: "https://shoota-web.vercel.app"
+              },
+              {
+                name: "Tracky.ng",
+                description: "A robust tracking software tailored for real-time monitoring and management needs.",
+                link: null
+              }
+            ].map((product, index) => (
+              <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-1">
+                <div className="mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-brand-blue rounded-lg flex items-center justify-center mb-4">
+                    <Code className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-brand-navy mb-3">{product.name}</h3>
+                  <p className="text-brand-gray mb-6">{product.description}</p>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  {product.link ? (
+                    <a 
+                      href={product.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-6 py-3 bg-brand-green text-white rounded-lg hover:bg-brand-blue transition-colors font-medium"
+                    >
+                      Visit Product
+                      <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center px-6 py-3 bg-gray-100 text-brand-gray rounded-lg font-medium">
+                      Coming Soon
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
