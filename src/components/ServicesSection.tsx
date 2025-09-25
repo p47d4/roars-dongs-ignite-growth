@@ -20,23 +20,24 @@ const ServicesSection = () => {
       ]
     },
     {
-      title: "I.T & Cybersecurity Services",
+      title: "I.T, A.I & Cybersecurity Services",
       icon: <Shield className="h-10 w-10 text-brand-green" />,
       description: "Protect your digital assets with our comprehensive cybersecurity solutions. We provide IT infrastructure management, security assessments, and implementation of robust security measures to safeguard your business from cyber threats.",
       points: [
-        "IT Infrastructure Management",
+        "I.T & A.I Infrastructure Management",
         "Cybersecurity Assessment & Implementation",
         "Network Security & Monitoring",
         "Data Protection & Recovery Solutions"
       ]
     },
     {
-      title: "Tax & Audit Advisory",
+      title: "Tax, Audit & Insurance Advisory",
       icon: <Calculator className="h-10 w-10 text-brand-green" />,
       description: "Our comprehensive tax and audit services ensure regulatory compliance while optimizing your financial performance. We provide strategic tax planning, audit services, and financial advisory to help you make informed business decisions.",
       points: [
         "Financial Statement Audits",
         "Tax Planning & Compliance",
+        "Insurance Training & Compliance",
         "Due Diligence & Forensics",
         "Financial Modeling & Analysis",
         "Audit & Advisory Services",
@@ -188,19 +189,31 @@ const ServicesSection = () => {
           <div className="grid md:grid-cols-2 gap-8 animate-slide-up opacity-0 animation-delay-200">
             {[
               {
-                name: "Trackventory",
-                description: "All Assets Inventory tracking and monitoring platform inclusive of CRM, ERP, Inventory Management, Support Desk, and more.",
-                link: "https://trackventory-web.vercel.app"
+                name: "Reap ERP",
+                description: "ERP for Academia, Healthcare, Agro, Mining, Private Organisations, Public Institutions and Custom Workflows.",
+                link: "https://reap-erp.vercel.app",
+                logo: "/lovable-uploads/reap-logo.png"
               },
+              {
+                name: "Roars Simulation",
+                description: "An immersive simulation software designed for adaptive training solutions in sports, defense, transport, and commercial.",
+                link: "https://roars-simulation.vercel.app",
+                logo: "/lovable-uploads/roars-simulation.png"
+              },
+              {
+                name: "Trackventory",
+                description: "All Assets Inventory tracking and monitoring platform.",
+                link: "https://trackventory.com.ng"
+              },
+              // {
+              //   name: "Shoota",
+              //   description: "An immersive simulation software designed for shooting training and practice.",
+              //   link: "https://shoota-web.vercel.app"
+              // },
               {
                 name: "R&D Kiosk",
                 description: "A self-service kiosk solution designed for all industries to enhance efficiency and user experience.",
                 link: null
-              },
-              {
-                name: "Shoota Simulation",
-                description: "An immersive simulation software designed for shooting training and practice.",
-                link: "https://shoota-web.vercel.app"
               },
               {
                 name: "Tracky.ng",
@@ -210,9 +223,17 @@ const ServicesSection = () => {
             ].map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-1">
                 <div className="mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-brand-blue rounded-lg flex items-center justify-center mb-4">
-                    <Code className="h-6 w-6 text-white" />
-                  </div>
+                  {product.logo ? (
+                    <img
+                      src={product.logo}
+                      alt={`${product.name} logo`}
+                      className="w-14 h-14 object-contain mb-4 bg-white"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-brand-blue rounded-lg flex items-center justify-center mb-4">
+                      <Code className="h-6 w-6 text-white" />
+                    </div>
+                  )}
                   <h3 className="text-xl font-semibold text-brand-navy mb-3">{product.name}</h3>
                   <p className="text-brand-gray mb-6">{product.description}</p>
                 </div>
