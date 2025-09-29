@@ -84,6 +84,90 @@ const TeamMemberDetail = () => {
         "Member, Association of Certified Chartered Accountants (ACCA)",
         "Holder, Certificate of Finance, Accounting & Business (CFAB)"
       ]
+    },
+    "director-administration": {
+      name: "DIRECTOR OF ADMINISTRATION",
+      position: "Director of Administration",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "DA",
+      email: "admin@roarsanddongs.com.ng",
+      phone: "+234-XXX-XXX-XXXX",
+      linkedin: "#",
+      bio: "The Director of Administration manages all administrative duties at Roars & Dongs Limited, ensuring seamless operations through effective management of registrations, filing of applications, and proposals. This role is crucial in maintaining organizational efficiency and supporting all departments with administrative excellence.",
+      expertise: [
+        "Administrative Management",
+        "Document Management",
+        "Application Processing",
+        "Proposal Development",
+        "Office Coordination"
+      ],
+      experience: "Extensive experience in administrative management and operations",
+      education: "Bachelor's degree in Business Administration or related field",
+      qualifications: undefined,
+      memberships: undefined
+    },
+    "director-operations": {
+      name: "DIRECTOR OF OPERATIONS",
+      position: "Director of Operations",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "DO",
+      email: "operations@roarsanddongs.com.ng",
+      phone: "+234-XXX-XXX-XXXX",
+      linkedin: "#",
+      bio: "The Director of Operations oversees all office operations and related activities at Roars & Dongs Limited. This includes staff employment, operational oversight, and the strategic drafting of proposals to ensure the company's operational excellence and efficiency across all business units.",
+      expertise: [
+        "Operations Management",
+        "Staff Development",
+        "Proposal Writing",
+        "Process Optimization",
+        "Strategic Planning"
+      ],
+      experience: "Proven track record in operations management and organizational development",
+      education: "Bachelor's degree in Operations Management or related field",
+      qualifications: undefined,
+      memberships: undefined
+    },
+    "muddathir-muhammed": {
+      name: "MUDDATHIR MUHAMMED",
+      position: "Director of Marketing",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "MM",
+      email: "muddathir@roarsanddongs.com.ng",
+      phone: "+234-XXX-XXX-XXXX",
+      linkedin: "#",
+      bio: "Muddathir Muhammed heads all marketing, communications, and promotional activities at Roars & Dongs Limited. With a strategic approach to brand development and market positioning, he drives the company's marketing initiatives to enhance visibility, engage target audiences, and promote our comprehensive range of services.",
+      expertise: [
+        "Marketing Strategy",
+        "Brand Development",
+        "Corporate Communications",
+        "Digital Marketing",
+        "Campaign Management"
+      ],
+      experience: "Extensive experience in marketing and brand management",
+      education: "Bachelor's degree in Marketing or related field",
+      qualifications: undefined,
+      memberships: undefined
+    },
+    "suleiman-muhammad-aliyu-baqir": {
+      name: "SULEIMAN MUHAMMAD ALIYU BAQIR",
+      position: "Director of Research & Development",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "SMAB",
+      email: "suleiman@roarsanddongs.com.ng",
+      phone: "+234-XXX-XXX-XXXX",
+      linkedin: "#",
+      bio: "Suleiman Muhammad Aliyu Baqir leads all research and development activities at Roars & Dongs Limited. His focus on innovation and continuous improvement drives the development of cutting-edge solutions and products, ensuring the company remains at the forefront of technological advancement and service delivery.",
+      expertise: [
+        "Research & Development",
+        "Innovation Management",
+        "Product Development",
+        "Technology Research",
+        "Process Innovation"
+      ],
+      experience: "Proven expertise in R&D and innovation management",
+      education: "Bachelor's degree in Engineering or related technical field",
+      qualifications: undefined,
+      memberships: undefined
     }
   };
 

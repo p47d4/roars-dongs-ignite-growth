@@ -29,6 +29,38 @@ const TeamSection = () => {
       initials: "AZS",
       description: "Financial specialist with extensive experience in audit, assurance, and strategic advisory.",
       qualifications: "ACCA, ACA, MSc."
+    },
+    {
+      id: "director-administration",
+      name: "DIRECTOR OF ADMINISTRATION",
+      position: "Director of Administration",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "DA",
+      description: "Managing all administrative duties including registering, filing of applications, and proposals."
+    },
+    {
+      id: "director-operations",
+      name: "DIRECTOR OF OPERATIONS",
+      position: "Director of Operations",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "DO",
+      description: "Overseeing office operations, staff employment, drafting of proposals, and operational oversight."
+    },
+    {
+      id: "muddathir-muhammed",
+      name: "MUDDATHIR MUHAMMED",
+      position: "Director of Marketing",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "MM",
+      description: "Leading all marketing, communications, and promotional activities."
+    },
+    {
+      id: "suleiman-muhammad-aliyu-baqir",
+      name: "SULEIMAN MUHAMMAD ALIYU BAQIR",
+      position: "Director of Research & Development",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "SMAB",
+      description: "Leading all research and development activities."
     }
   ];
 
