@@ -32,7 +32,7 @@ const TeamSection = () => {
     },
     {
       id: "director-administration",
-      name: "DIRECTOR OF ADMINISTRATION",
+      name: "USMAN IDRIS",
       position: "Director of Administration",
       image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
       initials: "DA",
@@ -40,7 +40,7 @@ const TeamSection = () => {
     },
     {
       id: "director-operations",
-      name: "DIRECTOR OF OPERATIONS",
+      name: "MOHAMMED AZAD ABDULAZEEZ",
       position: "Director of Operations",
       image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
       initials: "DO",
