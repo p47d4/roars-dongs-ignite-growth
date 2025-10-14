@@ -1,8 +1,14 @@
-
 import { useState } from "react";
 import { 
   Code, Shield, Calculator, ShoppingCart, GraduationCap, Building2, Users
 } from "lucide-react";
+import serviceSoftware from '@/assets/service-software.jpg';
+import serviceCybersecurity from '@/assets/service-cybersecurity.jpg';
+import serviceTaxAudit from '@/assets/service-tax-audit.jpg';
+import serviceProcurement from '@/assets/service-procurement.jpg';
+import serviceTraining from '@/assets/service-training.jpg';
+import serviceSmartCity from '@/assets/service-smart-city.jpg';
+import serviceConsultation from '@/assets/service-consultation.jpg';
 
 const ServicesSection = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -11,6 +17,7 @@ const ServicesSection = () => {
     {
       title: "Software Design & Integration",
       icon: <Code className="h-10 w-10 text-brand-green" />,
+      image: serviceSoftware,
       description: "We design, develop, and integrate custom software solutions that streamline your business operations. From web applications to mobile apps and system integrations, we deliver scalable and robust solutions tailored to your specific requirements.",
       points: [
         "Custom Web Application Development",
@@ -22,6 +29,7 @@ const ServicesSection = () => {
     {
       title: "I.T, A.I & Cybersecurity Services",
       icon: <Shield className="h-10 w-10 text-brand-green" />,
+      image: serviceCybersecurity,
       description: "Protect your digital assets with our comprehensive cybersecurity solutions. We provide IT infrastructure management, security assessments, and implementation of robust security measures to safeguard your business from cyber threats.",
       points: [
         "I.T & A.I Infrastructure Management",
@@ -33,6 +41,7 @@ const ServicesSection = () => {
     {
       title: "Tax, Audit & Insurance Advisory",
       icon: <Calculator className="h-10 w-10 text-brand-green" />,
+      image: serviceTaxAudit,
       description: "Our comprehensive tax and audit services ensure regulatory compliance while optimizing your financial performance. We provide strategic tax planning, audit services, and financial advisory to help you make informed business decisions.",
       points: [
         "Financial Statement Audits",
@@ -49,6 +58,7 @@ const ServicesSection = () => {
     {
       title: "Procurement & Contracting",
       icon: <ShoppingCart className="h-10 w-10 text-brand-green" />,
+      image: serviceProcurement,
       description: "Streamline your procurement processes with our expert procurement and contracting services. We help optimize your supply chain, manage vendor relationships, and ensure cost-effective procurement strategies.",
       points: [
         "Procurement Strategy Development",
@@ -60,6 +70,7 @@ const ServicesSection = () => {
     {
       title: "Training & Capacity Building",
       icon: <GraduationCap className="h-10 w-10 text-brand-green" />,
+      image: serviceTraining,
       description: "Empower your team with our comprehensive training and capacity building programs. We offer customized training solutions across various domains to enhance skills, improve productivity, and drive organizational growth.",
       points: [
         "Professional Skills Development",
@@ -71,6 +82,7 @@ const ServicesSection = () => {
     {
       title: "Smart City Solutions",
       icon: <Building2 className="h-10 w-10 text-brand-green" />,
+      image: serviceSmartCity,
       description: "Transform urban environments with our innovative smart city solutions. We design and implement technology-driven solutions that enhance urban planning, improve public services, and create sustainable city ecosystems.",
       points: [
         "Urban Planning & Development",
@@ -82,6 +94,7 @@ const ServicesSection = () => {
     {
       title: "Business Consultation",
       icon: <Users className="h-10 w-10 text-brand-green" />,
+      image: serviceConsultation,
       description: "Get expert guidance to navigate complex business challenges and identify growth opportunities. Our business consultation services provide strategic insights, operational improvements, and market analysis to drive your business forward.",
       points: [
         "Strategic Business Planning",
@@ -160,16 +173,31 @@ const ServicesSection = () => {
           {/* Detailed Service Sections */}
           <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
-                <div className="mb-4">{service.icon}</div>
-                <h4 className="text-lg font-semibold mb-3 text-brand-navy">{service.title}</h4>
-                <p className="text-sm text-brand-gray mb-4">{service.description}</p>
-                <button 
-                  onClick={() => setActiveTab(index)}
-                  className="text-brand-blue hover:text-brand-green transition-colors text-sm font-medium"
-                >
-                  Learn More →
-                </button>
+              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4">
+                    {service.icon}
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h4 className="text-lg font-semibold mb-3 text-brand-navy">{service.title}</h4>
+                  <p className="text-sm text-brand-gray mb-4 line-clamp-3">{service.description}</p>
+                  <button 
+                    onClick={() => setActiveTab(index)}
+                    className="text-brand-blue hover:text-brand-green transition-colors text-sm font-medium inline-flex items-center"
+                  >
+                    Learn More 
+                    <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             ))}
           </div>
