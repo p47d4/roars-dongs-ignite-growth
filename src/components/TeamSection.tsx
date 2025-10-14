@@ -9,7 +9,7 @@ const TeamSection = () => {
       id: "lukman-ahmed-khalifa",
       name: "LUKMAN AHMED KHALIFA",
       position: "Chief Executive Officer",
-      image: "/lovable-uploads/placeholder-ceo.png",
+      image: "/lovable-uploads/ceo img.png",
       initials: "LAK",
       description: "Visionary leader driving strategic growth and innovation across all business verticals."
     },
@@ -17,7 +17,7 @@ const TeamSection = () => {
       id: "adnan-baba-ahmed",
       name: "ADNAN BABA-AHMED",
       position: "Chief Technology Officer",
-      image: "/lovable-uploads/aba.jpeg",
+      image: "/lovable-uploads/cto img.png",
       initials: "ABA",
       description: "Technology expert leading digital transformation and innovative solutions development."
     },
@@ -25,7 +25,7 @@ const TeamSection = () => {
       id: "abdulkarim-zakari-sada",
       name: "ABDULKARIM ZAKARI SADA",
       position: "Chief Financial Officer",
-      image: "/lovable-uploads/dc4392b9-cb69-4c8a-bbd0-af6f39bab8a6.png",
+      image: "/lovable-uploads/cfo img.png",
       initials: "AZS",
       description: "Financial specialist with extensive experience in audit, assurance, and strategic advisory.",
       qualifications: "ACCA, ACA, MSc."
@@ -58,7 +58,7 @@ const TeamSection = () => {
       id: "suleiman-muhammad-aliyu-baqir",
       name: "SULEIMAN MUHAMMAD ALIYU BAQIR",
       position: "Director of Research & Development",
-      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      image: "/lovable-uploads/crd img.png",
       initials: "SMAB",
       description: "Leading all research and development activities."
     }
