@@ -88,7 +88,7 @@ const TeamMemberDetail = () => {
     "director-administration": {
       name: "DIRECTOR OF ADMINISTRATION",
       position: "Director of Administration",
-      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      image: "/lovable-uploads/da img.png",
       initials: "DA",
       email: "usman@roarsanddongs.com.ng",
       phone: "+234-XXX-XXX-XXXX",
@@ -109,7 +109,7 @@ const TeamMemberDetail = () => {
     "director-operations": {
       name: "DIRECTOR OF OPERATIONS",
       position: "Director of Operations",
-      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      image: "/lovable-uploads/do img.png",
       initials: "DO",
       email: "azad@roarsanddongs.com.ng",
       phone: "+234-XXX-XXX-XXXX",
