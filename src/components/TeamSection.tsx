@@ -34,7 +34,7 @@ const TeamSection = () => {
       id: "director-administration",
       name: "USMAN IDRIS",
       position: "Director of Administration",
-      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      image: "/lovable-uploads/da img.png",
       initials: "DA",
       description: "Managing all administrative duties including registering, filing of applications, and proposals."
     },
@@ -42,7 +42,7 @@ const TeamSection = () => {
       id: "director-operations",
       name: "MOHAMMED AZAD ABDULAZEEZ",
       position: "Director of Operations",
-      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      image: "/lovable-uploads/do img.png",
       initials: "DO",
       description: "Overseeing office operations, staff employment, drafting of proposals, and operational oversight."
     },
