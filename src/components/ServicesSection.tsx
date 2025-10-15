@@ -222,6 +222,12 @@ const ServicesSection = () => {
                 link: "https://reap-erp.vercel.app",
                 logo: "/lovable-uploads/reap-logo.png"
               },
+      {
+                name: "Tracky.ng",
+                description: "A robust tracking software tailored for real-time monitoring and management needs.",
+                link: "https://trackyng.vercel.app",
+        logo: "/lovable-uploads/trackyng-logo.png"
+              },
               {
                 name: "Roars Simulation",
                 description: "An immersive simulation software designed for adaptive training solutions in sports, defense, transport, and commercial.",
@@ -231,7 +237,8 @@ const ServicesSection = () => {
               {
                 name: "Trackventory",
                 description: "All Assets Inventory tracking and monitoring platform.",
-                link: "https://trackventory.com.ng"
+                link: "https://trackventory.com.ng",
+                logo: "/lovable-uploads/trackventory.png"
               },
               // {
               //   name: "Shoota",
@@ -241,11 +248,6 @@ const ServicesSection = () => {
               {
                 name: "R&D Kiosk",
                 description: "A self-service kiosk solution designed for all industries to enhance efficiency and user experience.",
-                link: null
-              },
-              {
-                name: "Tracky.ng",
-                description: "A robust tracking software tailored for real-time monitoring and management needs.",
                 link: null
               }
             ].map((product, index) => (
