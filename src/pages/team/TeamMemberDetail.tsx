@@ -127,27 +127,6 @@ const TeamMemberDetail = () => {
       qualifications: undefined,
       memberships: undefined
     },
-    "muddathir-muhammed": {
-      name: "MUDDATHIR MUHAMMED",
-      position: "Director of Marketing",
-      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
-      initials: "MM",
-      email: "muddathir@roarsanddongs.com.ng",
-      phone: "+234-XXX-XXX-XXXX",
-      linkedin: "#",
-      bio: "Muddathir Muhammed heads all marketing, communications, and promotional activities at Roars & Dongs Limited. With a strategic approach to brand development and market positioning, he drives the company's marketing initiatives to enhance visibility, engage target audiences, and promote our comprehensive range of services.",
-      expertise: [
-        "Marketing Strategy",
-        "Brand Development",
-        "Corporate Communications",
-        "Digital Marketing",
-        "Campaign Management"
-      ],
-      experience: "Extensive experience in marketing and brand management",
-      education: "Bachelor's degree in Marketing or related field",
-      qualifications: undefined,
-      memberships: undefined
-    },
     "suleiman-muhammad-aliyu-baqir": {
       name: "SULEIMAN MUHAMMAD ALIYU BAQIR",
       position: "Director of Research & Development",
@@ -166,6 +145,27 @@ const TeamMemberDetail = () => {
       ],
       experience: "Proven expertise in R&D and innovation management",
       education: "Bachelor's degree in Engineering or related technical field",
+      qualifications: undefined,
+      memberships: undefined
+    }
+    "muddathir-muhammed": {
+      name: "MUDDATHIR MUHAMMED",
+      position: "Director of Marketing",
+      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      initials: "MM",
+      email: "muddathir@roarsanddongs.com.ng",
+      phone: "+234-XXX-XXX-XXXX",
+      linkedin: "#",
+      bio: "Muddathir Muhammed heads all marketing, communications, and promotional activities at Roars & Dongs Limited. With a strategic approach to brand development and market positioning, he drives the company's marketing initiatives to enhance visibility, engage target audiences, and promote our comprehensive range of services.",
+      expertise: [
+        "Marketing Strategy",
+        "Brand Development",
+        "Corporate Communications",
+        "Digital Marketing",
+        "Campaign Management"
+      ],
+      experience: "Extensive experience in marketing and brand management",
+      education: "Bachelor's degree in Marketing or related field",
       qualifications: undefined,
       memberships: undefined
     }
