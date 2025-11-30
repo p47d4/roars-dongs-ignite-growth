@@ -147,7 +147,7 @@ const TeamMemberDetail = () => {
       education: "Bachelor's degree in Engineering or related technical field",
       qualifications: undefined,
       memberships: undefined
-    }
+    },
     "muddathir-muhammed": {
       name: "DAHIRU MUDDATHIR MUHAMMAD",
       position: "Director of Marketing",
