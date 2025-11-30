@@ -39,6 +39,14 @@ const TeamSection = () => {
       description: "Managing all administrative duties including registering, filing of applications, and proposals."
     },
     {
+      id: "suleiman-muhammad-aliyu-baqir",
+      name: "SULEIMAN MUHAMMAD ALIYU BAQIR",
+      position: "Director of Research & Development",
+      image: "/lovable-uploads/crd img.png",
+      initials: "SMAB",
+      description: "Leading all research and development activities."
+    },
+    {
       id: "director-operations",
       name: "MOHAMMED AZAD ABDULAZEEZ",
       position: "Director of Operations",
@@ -53,14 +61,6 @@ const TeamSection = () => {
       image: "/lovable-uploads/cmo img.png",
       initials: "MM",
       description: "Leading all marketing, communications, and promotional activities."
-    },
-    {
-      id: "suleiman-muhammad-aliyu-baqir",
-      name: "SULEIMAN MUHAMMAD ALIYU BAQIR",
-      position: "Director of Research & Development",
-      image: "/lovable-uploads/crd img.png",
-      initials: "SMAB",
-      description: "Leading all research and development activities."
     }
   ];
 
