@@ -151,7 +151,7 @@ const TeamMemberDetail = () => {
     "muddathir-muhammed": {
       name: "DAHIRU MUDDATHIR MUHAMMAD",
       position: "Director of Marketing",
-      image: "/lovable-uploads/IMG-20251130-WA0006.jpg",
+      image: "/lovable-uploads/cmo img.png",
       initials: "MM",
       email: "muddathir@roarsanddongs.com.ng",
       phone: "+234-XXX-XXX-XXXX",
