@@ -149,14 +149,14 @@ const TeamMemberDetail = () => {
       memberships: undefined
     }
     "muddathir-muhammed": {
-      name: "MUDDATHIR MUHAMMED",
+      name: "DAHIRU MUDDATHIR MUHAMMAD",
       position: "Director of Marketing",
       image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
       initials: "MM",
       email: "muddathir@roarsanddongs.com.ng",
       phone: "+234-XXX-XXX-XXXX",
       linkedin: "#",
-      bio: "Muddathir Muhammed heads all marketing, communications, and promotional activities at Roars & Dongs Limited. With a strategic approach to brand development and market positioning, he drives the company's marketing initiatives to enhance visibility, engage target audiences, and promote our comprehensive range of services.",
+      bio: "Muddathir Dahiru Muhammad heads all marketing, communications, and promotional activities at Roars & Dongs Limited. With a strategic approach to brand development and market positioning, he drives the company's marketing initiatives to enhance visibility, engage target audiences, and promote our comprehensive range of services.",
       expertise: [
         "Marketing Strategy",
         "Brand Development",
