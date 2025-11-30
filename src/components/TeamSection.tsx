@@ -48,9 +48,9 @@ const TeamSection = () => {
     },
     {
       id: "muddathir-muhammed",
-      name: "MUDDATHIR MUHAMMED",
+      name: "MUDDATHIR DAHIRU MUHAMMAD",
       position: "Director of Marketing",
-      image: "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      image: "/lovable-uploads/cmo img.png",
       initials: "MM",
       description: "Leading all marketing, communications, and promotional activities."
     },
