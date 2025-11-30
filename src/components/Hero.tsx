@@ -47,20 +47,7 @@ const Hero = () => {
                 </button>
               </div>
               
-              <div className="flex items-center space-x-8 animate-fade-in opacity-0" style={{ animationDelay: "0.8s" }}>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">3+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">75+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
-                </div>
-              </div>
+        
             </div>
           </div>
           
