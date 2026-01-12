@@ -54,7 +54,7 @@ const AboutSection = () => {
         </div>
 
         {/* Highlights Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 animate-slide-up opacity-0 animation-delay-150">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 animate-slide-up opacity-0 animation-delay-150">
           {highlights.map((highlight, index) => (
             <div key={index} className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-100 text-center group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-brand-green to-brand-blue text-white mb-4 group-hover:scale-110 transition-transform">
@@ -65,7 +65,7 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
-        
+         */}
         <div className="grid md:grid-cols-2 gap-10 items-start mb-16">
           <div className="animate-slide-up opacity-0 animation-delay-200">
             <div className="relative">
