@@ -1,0 +1,27 @@
+{
+  "name": "Roars & Dongs Limited - Enterprise Development Provider",
+  "short_name": "Roars & Dongs",
+  "description": "Enterprise development service provider dedicated to helping companies achieve sustainable growth and success",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "enterprise", "consulting"],
+  "lang": "en",
+  "dir": "ltr"
+}
