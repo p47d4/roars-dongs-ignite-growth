@@ -240,6 +240,13 @@ const ServicesSection = () => {
                 link: "https://trackventory.com.ng",
                 logo: "/lovable-uploads/trackventory.png"
               },
+              {
+                name: "Enigma",
+                description: "Roars & Dongs software platform for modern business operations and workflows.",
+                link: "https://enigma.roarsanddongs.com.ng",
+                logo: "/lovable-uploads/enigma-logo.png",
+                logoClassName: "h-12 w-auto max-w-[160px] object-contain mb-4 bg-black rounded-lg px-3 py-2"
+              },
               // {
               //   name: "Shoota",
               //   description: "An immersive simulation software designed for shooting training and practice.",
@@ -257,7 +264,7 @@ const ServicesSection = () => {
                     <img
                       src={product.logo}
                       alt={`${product.name} logo`}
-                      className="w-14 h-14 object-contain mb-4 bg-white"
+                      className={product.logoClassName ?? "w-14 h-14 object-contain mb-4 bg-white"}
                     />
                   ) : (
                     <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-brand-blue rounded-lg flex items-center justify-center mb-4">
