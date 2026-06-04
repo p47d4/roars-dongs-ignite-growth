@@ -106,27 +106,27 @@ const TeamMemberDetail = () => {
       qualifications: undefined,
       memberships: undefined
     },
-    "director-operations": {
-      name: "DIRECTOR OF OPERATIONS",
-      position: "Director of Operations",
-      image: "/lovable-uploads/do img.png",
-      initials: "DO",
-      email: "azad@roarsanddongs.com.ng",
-      phone: "+234-XXX-XXX-XXXX",
-      linkedin: "#",
-      bio: "The Director of Operations oversees all office operations and related activities at Roars & Dongs Limited. This includes staff employment, operational oversight, and the strategic drafting of proposals to ensure the company's operational excellence and efficiency across all business units.",
-      expertise: [
-        "Operations Management",
-        "Staff Development",
-        "Proposal Writing",
-        "Process Optimization",
-        "Strategic Planning"
-      ],
-      experience: "Proven track record in operations management and organizational development",
-      education: "Bachelor's degree in Operations Management or related field",
-      qualifications: undefined,
-      memberships: undefined
-    },
+    // "director-operations": {
+    //   name: "MOHAMMED AZAD ABDULAZEEZ",
+    //   position: "Director of Operations",
+    //   image: "/lovable-uploads/do img.png",
+    //   initials: "DO",
+    //   email: "azad@roarsanddongs.com.ng",
+    //   phone: "+234-XXX-XXX-XXXX",
+    //   linkedin: "#",
+    //   bio: "The Director of Operations oversees all office operations and related activities at Roars & Dongs Limited. This includes staff employment, operational oversight, and the strategic drafting of proposals to ensure the company's operational excellence and efficiency across all business units.",
+    //   expertise: [
+    //     "Operations Management",
+    //     "Staff Development",
+    //     "Proposal Writing",
+    //     "Process Optimization",
+    //     "Strategic Planning"
+    //   ],
+    //   experience: "Proven track record in operations management and organizational development",
+    //   education: "Bachelor's degree in Operations Management or related field",
+    //   qualifications: undefined,
+    //   memberships: undefined
+    // },
     "suleiman-muhammad-aliyu-baqir": {
       name: "SULEIMAN MUHAMMAD ALIYU BAQIR",
       position: "Director of Research & Development",

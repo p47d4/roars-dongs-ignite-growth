@@ -84,6 +84,16 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
+            <img
+              src="/lovable-uploads/ndpc.jpg"
+              alt="Nigeria Data Protection Commission"
+              className="h-14 w-auto object-contain"
+            />
+            <p className="text-gray-300 text-sm text-center sm:text-left">
+              Being NDPC compliant
+            </p>
+          </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; {currentYear} Roars & Dongs Limited. All rights reserved.

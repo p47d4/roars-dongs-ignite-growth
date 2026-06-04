@@ -46,14 +46,14 @@ const TeamSection = () => {
       initials: "SMAB",
       description: "Leading all research and development activities."
     },
-    {
-      id: "director-operations",
-      name: "MOHAMMED AZAD ABDULAZEEZ",
-      position: "Director of Operations",
-      image: "/lovable-uploads/do img.png",
-      initials: "DO",
-      description: "Overseeing office operations, staff employment, drafting of proposals, and operational oversight."
-    },
+    // {
+    //   id: "director-operations",
+    //   name: "MOHAMMED AZAD ABDULAZEEZ",
+    //   position: "Director of Operations",
+    //   image: "/lovable-uploads/do img.png",
+    //   initials: "DO",
+    //   description: "Overseeing office operations, staff employment, drafting of proposals, and operational oversight."
+    // },
     {
       id: "muddathir-muhammed",
       name: "MUDDATHIR DAHIRU MUHAMMAD",
