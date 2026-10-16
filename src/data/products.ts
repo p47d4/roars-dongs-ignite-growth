@@ -1,4 +1,4 @@
-export const products = 
+export const products = [
               {
                 name: "Reap ERP",
                 description: "ERP for Academia, Healthcare, Agro, Mining, Private Organisations, Public Institutions and Custom Workflows.",
