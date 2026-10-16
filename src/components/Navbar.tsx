@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [{ title: "Home", href: "/" }, { title: "About", href: "/about" }, { title: "Services", href: "/services" }, { title: "Projects", href: "/projects" }, { title: "Team", href: "/team" }];
 const Navbar = () => {
@@ -20,10 +21,11 @@ const Navbar = () => {
         <span className="text-base md:text-lg font-semibold">Roars & Dongs<span className="block text-[9px] text-muted-foreground uppercase tracking-widest">Limited · Nigeria</span></span>
       </Link>
       <div className="hidden lg:flex items-center gap-1">{links.map(link => <Button key={link.href} asChild variant="ghost" className={pathname === link.href || (link.href === "/" && pathname === "/index") ? "text-primary" : "text-muted-foreground"}><Link to={link.href} aria-current={pathname === link.href ? "page" : undefined}>{link.title}</Link></Button>)}</div>
-      <Button asChild className="hidden lg:inline-flex"><Link to="/contact">Let’s talk <ArrowUpRight /></Link></Button>
+      <div className="flex items-center gap-1"><ThemeToggle /><Button asChild className="hidden lg:inline-flex"><Link to="/consultation">Find your solution <ArrowUpRight /></Link></Button>
       <Button variant="ghost" size="icon" className="lg:hidden" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
+      </div>
     </nav>
-    {open && <nav id="mobile-navigation" aria-label="Mobile navigation" className="lg:hidden border-t border-border bg-background px-5 py-5 animate-slide-down"><div className="container flex flex-col items-stretch gap-2 p-0">{[...links, { title: "Contact", href: "/contact" }].map(link => <Button asChild key={link.href} variant="ghost" className="justify-start h-12"><Link to={link.href}>{link.title}</Link></Button>)}</div></nav>}
+    {open && <nav id="mobile-navigation" aria-label="Mobile navigation" className="lg:hidden border-t border-border bg-background px-5 py-5 animate-slide-down"><div className="container flex flex-col items-stretch gap-2 p-0">{[...links, { title: "AI consultation", href: "/consultation" }, { title: "Contact", href: "/contact" }].map(link => <Button asChild key={link.href} variant="ghost" className="justify-start h-12"><Link to={link.href}>{link.title}</Link></Button>)}</div></nav>}
   </header>;
 };
 export default Navbar;

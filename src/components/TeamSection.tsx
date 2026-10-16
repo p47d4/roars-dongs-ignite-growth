@@ -30,14 +30,14 @@ const TeamSection = () => {
       description: "Financial specialist with extensive experience in audit, assurance, and strategic advisory.",
       qualifications: "ACCA, ACA, MSc."
     },
-    {
-      id: "director-administration",
-      name: "USMAN IDRIS",
-      position: "Director of Administration",
-      image: "/lovable-uploads/da img.png",
-      initials: "DA",
-      description: "Managing all administrative duties including registering, filing of applications, and proposals."
-    },
+//     {
+//       id: "director-administration",
+//       name: "USMAN IDRIS",
+//       position: "Director of Administration",
+//       image: "/lovable-uploads/da img.png",
+//       initials: "DA",
+//       description: "Managing all administrative duties including registering, filing of applications, and proposals."
+//     },
     {
       id: "suleiman-muhammad-aliyu-baqir",
       name: "SULEIMAN MUHAMMAD ALIYU BAQIR",
@@ -54,14 +54,14 @@ const TeamSection = () => {
     //   initials: "DO",
     //   description: "Overseeing office operations, staff employment, drafting of proposals, and operational oversight."
     // },
-    {
-      id: "muddathir-muhammed",
-      name: "MUDDATHIR DAHIRU MUHAMMAD",
-      position: "Director of Marketing",
-      image: "/lovable-uploads/cmo img.png",
-      initials: "MM",
-      description: "Leading all marketing, communications, and promotional activities."
-    }
+//     {
+//       id: "muddathir-muhammed",
+//       name: "MUDDATHIR DAHIRU MUHAMMAD",
+//       position: "Director of Marketing",
+//       image: "/lovable-uploads/cmo img.png",
+//       initials: "MM",
+//       description: "Leading all marketing, communications, and promotional activities."
+//     }
   ];
 
   return (

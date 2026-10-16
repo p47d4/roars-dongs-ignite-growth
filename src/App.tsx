@@ -16,10 +16,14 @@ import TeamMemberDetail from "./pages/team/TeamMemberDetail";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import RouteScroll from "./components/RouteScroll";
+import { ThemeProvider } from "next-themes";
+import Consultation from "./pages/Consultation";
+import CaseStudy from "./pages/CaseStudy";
 
 const queryClient = new QueryClient();
 
 const App = () => (
+  <ThemeProvider attribute="class" defaultTheme="dark" enableSystem storageKey="roars-theme">
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -35,6 +39,8 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:projectId" element={<CaseStudy />} />
+              <Route path="/consultation" element={<Consultation />} />
               <Route path="/team" element={<Team />} />
               <Route path="/team/:memberId" element={<TeamMemberDetail />} />
               <Route path="/contact" element={<Contact />} />
@@ -48,6 +54,7 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+  </ThemeProvider>
 );
 
 export default App;

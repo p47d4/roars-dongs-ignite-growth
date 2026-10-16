@@ -7,6 +7,7 @@ import courtAppealLogo from '@/assets/court-appeal-logo.png';
 
 export const projects = [
     {
+      id: "imvinci",
       name: "IMVINCI LTD",
       industry: "Technology",
       scope: "Complete digital transformation including website development, CRM system implementation, and email management solutions.",
@@ -14,6 +15,7 @@ export const projects = [
       logo: imvinciLogo
     },
     {
+      id: "euphoria-trackventory",
       name: "EUPHORIA TRACKVENTORY",
       industry: "Inventory Management",
       scope: "Implementation of Roars & Dongs' Trackventory product as inventory management system for Euphoria to efficiently track ECOWAS cards.",
@@ -21,6 +23,7 @@ export const projects = [
       logo: euphoriaLogo
     },
     {
+      id: "court-of-appeal",
       name: "COURT OF APPEAL",
       industry: "Government/Judiciary",
       scope: "Comprehensive IT solutions including storage unit inventory management, ICT support ticketing system, and procurement unit asset management.",
@@ -29,6 +32,7 @@ export const projects = [
     },
     // New projects
     {
+      id: "gafam-farms",
       name: "GAFAM FARMS LIMITED",
       industry: "Agriculture",
       scope: "Market research, feasibility study and financial statement analysis for additional funding.",
@@ -36,6 +40,7 @@ export const projects = [
       logo: null
     },
     {
+      id: "el-gidad-pharmaceuticals",
       name: "EL-GIDAD PHARMACEUTICALS LTD",
       industry: "Pharmacy",
       scope: "Market research, feasibility study and financial statement analysis for additional funding.",
@@ -43,6 +48,7 @@ export const projects = [
       logo: null
     },
     {
+      id: "pearly-bleu-waters",
       name: "PEARLY BLEU WATERS LIMITED",
       industry: "Oil & Gas",
       scope: "Feasibility study and financial statement analysis for projects expansion.",
@@ -50,6 +56,7 @@ export const projects = [
       logo: pearlyLogo
     },
     {
+      id: "maryam-endowment",
       name: "MARYAM ENDOWMENT TRUST FUND",
       industry: "Charity",
       scope: "Feasibility study and financial statement analysis for new project execution.",
@@ -57,6 +64,7 @@ export const projects = [
       logo: MEFLogo
     },
     {
+      id: "euphoria-press",
       name: "EUPHORIA PRESS LIMITED",
       industry: "Prints & Media",
       scope: "Feasibility study (in collaboration with Ministry of Interior), financial statement analysis and company valuation.",

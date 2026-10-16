@@ -85,27 +85,27 @@ const TeamMemberDetail = () => {
         "Holder, Certificate of Finance, Accounting & Business (CFAB)"
       ]
     },
-    "director-administration": {
-      name: "DIRECTOR OF ADMINISTRATION",
-      position: "Director of Administration",
-      image: "/lovable-uploads/da img.png",
-      initials: "DA",
-      email: "usman@roarsanddongs.com.ng",
-      phone: "+234-XXX-XXX-XXXX",
-      linkedin: "#",
-      bio: "The Director of Administration manages all administrative duties at Roars & Dongs Limited, ensuring seamless operations through effective management of registrations, filing of applications, and proposals. This role is crucial in maintaining organizational efficiency and supporting all departments with administrative excellence.",
-      expertise: [
-        "Administrative Management",
-        "Document Management",
-        "Application Processing",
-        "Proposal Development",
-        "Office Coordination"
-      ],
-      experience: "Extensive experience in administrative management and operations",
-      education: "Bachelor's degree in Business Administration or related field",
-      qualifications: undefined,
-      memberships: undefined
-    },
+//     "director-administration": {
+//       name: "DIRECTOR OF ADMINISTRATION",
+//       position: "Director of Administration",
+//       image: "/lovable-uploads/da img.png",
+//       initials: "DA",
+//       email: "usman@roarsanddongs.com.ng",
+//       phone: "+234-XXX-XXX-XXXX",
+//       linkedin: "#",
+//       bio: "The Director of Administration manages all administrative duties at Roars & Dongs Limited, ensuring seamless operations through effective management of registrations, filing of applications, and proposals. This role is crucial in maintaining organizational efficiency and supporting all departments with administrative excellence.",
+//       expertise: [
+//         "Administrative Management",
+//         "Document Management",
+//         "Application Processing",
+//         "Proposal Development",
+//         "Office Coordination"
+//       ],
+//       experience: "Extensive experience in administrative management and operations",
+//       education: "Bachelor's degree in Business Administration or related field",
+//       qualifications: undefined,
+//       memberships: undefined
+//     },
     // "director-operations": {
     //   name: "MOHAMMED AZAD ABDULAZEEZ",
     //   position: "Director of Operations",
@@ -148,27 +148,27 @@ const TeamMemberDetail = () => {
       qualifications: undefined,
       memberships: undefined
     },
-    "muddathir-muhammed": {
-      name: "DAHIRU MUDDATHIR MUHAMMAD",
-      position: "Director of Marketing",
-      image: "/lovable-uploads/cmo img.png",
-      initials: "MM",
-      email: "muddathir@roarsanddongs.com.ng",
-      phone: "+234-XXX-XXX-XXXX",
-      linkedin: "#",
-      bio: "Muddathir Dahiru Muhammad heads all marketing, communications, and promotional activities at Roars & Dongs Limited. With a strategic approach to brand development and market positioning, he drives the company's marketing initiatives to enhance visibility, engage target audiences, and promote our comprehensive range of services.",
-      expertise: [
-        "Marketing Strategy",
-        "Brand Development",
-        "Corporate Communications",
-        "Digital Marketing",
-        "Campaign Management"
-      ],
-      experience: "Extensive experience in marketing and brand management",
-      education: "Bachelor's degree in Marketing or related field",
-      qualifications: undefined,
-      memberships: undefined
-    }
+//     "muddathir-muhammed": {
+//       name: "DAHIRU MUDDATHIR MUHAMMAD",
+//       position: "Director of Marketing",
+//       image: "/lovable-uploads/cmo img.png",
+//       initials: "MM",
+//       email: "muddathir@roarsanddongs.com.ng",
+//       phone: "+234-XXX-XXX-XXXX",
+//       linkedin: "#",
+//       bio: "Muddathir Dahiru Muhammad heads all marketing, communications, and promotional activities at Roars & Dongs Limited. With a strategic approach to brand development and market positioning, he drives the company's marketing initiatives to enhance visibility, engage target audiences, and promote our comprehensive range of services.",
+//       expertise: [
+//         "Marketing Strategy",
+//         "Brand Development",
+//         "Corporate Communications",
+//         "Digital Marketing",
+//         "Campaign Management"
+//       ],
+//       experience: "Extensive experience in marketing and brand management",
+//       education: "Bachelor's degree in Marketing or related field",
+//       qualifications: undefined,
+//       memberships: undefined
+//     }
   };
 
   const member = teamMembers[memberId as keyof typeof teamMembers];
