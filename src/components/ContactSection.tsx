@@ -1,5 +1,6 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
@@ -31,6 +32,7 @@ type FormValues = z.infer<typeof formSchema>;
 const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { state } = useLocation();
   
   // Initialize form with validation
   const form = useForm<FormValues>({
@@ -43,6 +45,13 @@ const ContactSection = () => {
       message: "",
     },
   });
+
+  useEffect(() => {
+    if (state && typeof state.consultationBrief === "string") {
+      form.setValue("subject", "AI consultation follow-up");
+      form.setValue("message", state.consultationBrief);
+    }
+  }, [state, form]);
 
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
