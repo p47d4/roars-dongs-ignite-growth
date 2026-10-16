@@ -4,6 +4,7 @@
 
 @layer base {
   :root, .dark {
+    color-scheme: dark;
     --background: 240 9% 8%;
     --foreground: 0 0% 96%;
     --card: 240 6% 12%;
@@ -29,6 +30,20 @@
     --hero-bottom: linear-gradient(0deg, hsl(240 9% 8%), transparent);
     --surface-gradient: linear-gradient(135deg, hsl(240 6% 12%), hsl(240 9% 8%));
     --shadow-elegant: 0 16px 50px hsl(240 9% 3% / .25);
+  }
+  .light {
+    color-scheme: light;
+    --background: 210 20% 98%; --foreground: 240 12% 12%;
+    --card: 0 0% 100%; --card-foreground: 240 12% 12%;
+    --popover: 0 0% 100%; --popover-foreground: 240 12% 12%;
+    --primary: 152 75% 29%; --primary-foreground: 0 0% 100%;
+    --secondary: 205 75% 35%; --secondary-foreground: 0 0% 100%;
+    --muted: 210 14% 93%; --muted-foreground: 240 5% 40%;
+    --accent: 210 14% 90%; --accent-foreground: 240 12% 12%;
+    --border: 210 12% 84%; --input: 210 12% 78%; --ring: 152 75% 29%;
+    --hero-scrim: linear-gradient(90deg,hsl(210 20% 98% / .97),hsl(210 20% 98% / .88) 38%,hsl(210 20% 98% / .15));
+    --hero-bottom: linear-gradient(0deg,hsl(210 20% 98%),transparent);
+    --surface-gradient: linear-gradient(135deg,hsl(210 20% 95%),hsl(210 20% 98%));
   }
   * { @apply border-border; }
   html { scroll-behavior: smooth; scroll-padding-top: 100px; }
