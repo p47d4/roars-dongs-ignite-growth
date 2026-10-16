@@ -3,24 +3,22 @@ import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import TeamSection from '@/components/TeamSection';
-import ContactSection from '@/components/ContactSection';
+import PartnersSlider from '@/components/PartnersSlider';
+import ProductsSection from '@/components/ProductsSection';
+import ContactBanner from '@/components/ContactBanner';
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       <main>
         <Hero />
-        <div className="bg-gradient-to-br from-white via-amber-50 to-amber-100">
-          <AboutSection />
-        </div>
-        <div className="bg-gradient-to-tr from-white via-emerald-50 to-green-100">
-          <ServicesSection />
-        </div>
-        <ProjectsSection />
+        <PartnersSlider />
+        <AboutSection preview />
+        <ServicesSection preview />
+        <ProductsSection />
+        <ProjectsSection preview />
         <TeamSection />
-        <div className="bg-gradient-to-br from-white via-blue-50 to-indigo-100">
-          <ContactSection />
-        </div>
+        <ContactBanner />
       </main>
     </div>
   );

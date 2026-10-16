@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import TeamMemberDetail from "./pages/team/TeamMemberDetail";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import RouteScroll from "./components/RouteScroll";
 
 const queryClient = new QueryClient();
 
@@ -24,11 +25,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <RouteScroll />
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <div className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/index" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<Projects />} />
