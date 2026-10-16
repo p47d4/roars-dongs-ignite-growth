@@ -1,7 +1,7 @@
 import React from "react";
 
 const PrivacyPolicy = () => (
-  <div className="min-h-screen pt-20 px-4 max-w-3xl mx-auto">
+  <div className="min-h-screen pt-36 pb-20 px-5 max-w-3xl mx-auto leading-relaxed">
     <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
     <p className="mb-4">To comply with Nigerian regulations (NDPR/NDP Act 2023) and best practices:</p>
     <h2 className="text-2xl font-semibold mt-8 mb-2">1. Introduction</h2>
@@ -9,7 +9,7 @@ const PrivacyPolicy = () => (
     <h2 className="text-2xl font-semibold mt-8 mb-2">2. Data Controller</h2>
     <p className="mb-4">We are the <strong>data controller</strong> of your personal information within the meaning of the Nigeria Data Protection Regulation (NDPR) and Nigeria Data Protection Act 2023. For any inquiries or concerns, please contact:<br/>
       <strong>Legal Team</strong><br/>
-      Email: <a href="mailto:privacy@roarsanddongs.com.ng" className="text-blue-600 underline">privacy@roarsanddongs.com.ng</a><br/>
+      Email: <a href="mailto:privacy@roarsanddongs.com.ng" className="text-secondary underline">privacy@roarsanddongs.com.ng</a><br/>
       Address:
     </p>
     <h2 className="text-2xl font-semibold mt-8 mb-2">3. Information We Collect</h2>
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => (
       <li>Restrict or object to certain processing.</li>
       <li>Lodge complaints with regulatory authorities.</li>
     </ul>
-    <p className="mb-4">To exercise your rights, please contact us at <a href="mailto:privacy@roarsanddongs.com.ng" className="text-blue-600 underline">privacy@roarsanddongs.com.ng</a>.</p>
+    <p className="mb-4">To exercise your rights, please contact us at <a href="mailto:privacy@roarsanddongs.com.ng" className="text-secondary underline">privacy@roarsanddongs.com.ng</a>.</p>
     <h2 className="text-2xl font-semibold mt-8 mb-2">11. Children</h2>
     <p className="mb-4">Our services are not directed at children under 13 (or local age of maturity). We do not knowingly collect personal data from minors. If you believe we have collected such data, please contact us and we will delete it.</p>
     <h2 className="text-2xl font-semibold mt-8 mb-2">12. Changes to This Policy</h2>
@@ -74,7 +74,7 @@ const PrivacyPolicy = () => (
     <p className="mb-4 font-semibold">Last updated: July 15, 2025</p>
     <h2 className="text-2xl font-semibold mt-8 mb-2">13. Contact Us</h2>
     <p className="mb-4">Questions or concerns about this Privacy Policy should be sent to:<br/>
-      <strong>Email</strong>: <a href="mailto:privacy@roarsanddongs.com.ng" className="text-blue-600 underline">privacy@roarsanddongs.com.ng</a><br/>
+      <strong>Email</strong>: <a href="mailto:privacy@roarsanddongs.com.ng" className="text-secondary underline">privacy@roarsanddongs.com.ng</a><br/>
       <strong>Address</strong>: PLOT 1903, PEARL ESTATE, LIFECAMP, ABUJA, NIGERIA
     </p>
   </div>

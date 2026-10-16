@@ -80,10 +80,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-gradient-to-br from-brand-lightGray to-white">
+    <section id="contact" className="section-padding bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="section-title animate-slide-up opacity-0">Contact Us</h2>
+        <div className="max-w-2xl mb-12">
+          <h2 className="section-title">Let’s start a conversation.</h2>
           <p className="section-subtitle animate-slide-up opacity-0 animation-delay-100">
             Get in touch with our team to discuss how we can help your business grow and succeed.
           </p>
@@ -91,7 +91,7 @@ const ContactSection = () => {
         
         <div className="grid md:grid-cols-2 gap-10">
           <div className="animate-slide-up opacity-0 animation-delay-200">
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-card rounded-lg border border-border p-5 md:p-8">
               <h3 className="text-2xl font-semibold mb-6 text-brand-navy">Send Us a Message</h3>
               
               <Form {...form}>
@@ -177,7 +177,7 @@ const ContactSection = () => {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-brand-green hover:bg-brand-green/90 text-white px-6 py-3 rounded-md flex items-center justify-center transition-all w-full md:w-auto"
+                    className="w-full md:w-auto"
                   >
                     {isSubmitting ? (
                       "Sending Message..."
@@ -193,12 +193,12 @@ const ContactSection = () => {
           </div>
           
           <div className="animate-slide-up opacity-0 animation-delay-300">
-            <div className="bg-gradient-to-br from-brand-blue to-brand-navy text-white rounded-xl shadow-lg p-8 h-full">
+            <div className="bg-card text-foreground border border-border rounded-lg p-5 md:p-8 h-full">
               <h3 className="text-2xl font-semibold mb-6">Get In Touch</h3>
               
               <div className="space-y-6 mb-8">
                 <div className="flex items-start">
-                  <div className="bg-white/10 p-3 rounded-full mr-4">
+                  <div className="bg-muted p-3 rounded-full mr-4">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
@@ -208,27 +208,27 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-white/10 p-3 rounded-full mr-4">
+                  <div className="bg-muted p-3 rounded-full mr-4">
                     <Mail className="h-6 w-6" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Email</h4>
-                    <a href="mailto:info@roarsanddongs.com.ng" className="opacity-90 hover:opacity-100">info@roarsanddongs.com.ng</a>
+                    <a href="mailto:info@roarsanddongs.com.ng" className="text-muted-foreground hover:text-primary break-all">info@roarsanddongs.com.ng</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-white/10 p-3 rounded-full mr-4">
+                  <div className="bg-muted p-3 rounded-full mr-4">
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Phone</h4>
-                    <a href="tel:+2348069030497" className="opacity-90 hover:opacity-100">+234 806 903 0497</a>
+                    <a href="tel:+2348069030497" className="text-muted-foreground hover:text-primary break-all">+234 806 903 0497</a>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+              <div className="border-t border-border pt-6">
                 <h4 className="font-semibold text-lg mb-4">Business Hours</h4>
                 <ul className="space-y-2">
                   <li className="flex justify-between">
