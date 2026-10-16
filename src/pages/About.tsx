@@ -2,8 +2,8 @@ import AboutSection from '@/components/AboutSection';
 
 const About = () => {
   return (
-    <div className="min-h-screen pt-20">
-      <div className="bg-gradient-to-br from-white via-amber-50 to-amber-100">
+    <div className="page-shell">
+      <div>
         <AboutSection />
       </div>
     </div>

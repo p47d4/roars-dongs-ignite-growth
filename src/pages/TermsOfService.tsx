@@ -1,7 +1,7 @@
 import React from "react";
 
 const TermsOfService = () => (
-  <div className="min-h-screen pt-20 px-4 max-w-3xl mx-auto">
+  <div className="min-h-screen pt-36 pb-20 px-5 max-w-3xl mx-auto leading-relaxed">
     <h1 className="text-3xl font-bold mb-6">Terms of Service</h1>
     <p className="mb-4">Aligned with NDPR, Cybercrimes Act, and standard web‑service best practices:</p>
     <h2 className="text-2xl font-semibold mt-8 mb-2">1. Introduction</h2>
@@ -59,7 +59,7 @@ const TermsOfService = () => (
     <p className="mb-4">We may modify these Terms at any time, with changes posted on our website. Continued use after updates means you accept the new version.</p>
     <h2 className="text-2xl font-semibold mt-8 mb-2">13. Contact Information</h2>
     <p className="mb-4">For questions, clarifications, or to notify breaches, contact us at:<br/>
-      <strong>Email</strong>: <a href="mailto:support@roarsanddongs.com.ng" className="text-blue-600 underline">support@roarsanddongs.com.ng</a><br/>
+      <strong>Email</strong>: <a href="mailto:support@roarsanddongs.com.ng" className="text-secondary underline">support@roarsanddongs.com.ng</a><br/>
       <strong>Address</strong>: PLOT 1903, PEARL ESTATE, LIFECAMP, ABUJA, NIGERIA
     </p>
     <p className="mb-4 font-semibold">Last updated: July 15, 2025</p>

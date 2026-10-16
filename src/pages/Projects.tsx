@@ -2,7 +2,7 @@ import ProjectsSection from '@/components/ProjectsSection';
 
 const Projects = () => {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="page-shell">
       <ProjectsSection />
     </div>
   );

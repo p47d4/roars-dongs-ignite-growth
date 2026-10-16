@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Card, CardContent } from "@/components/ui/card";
+import { ArrowUpRight } from "lucide-react";
 
 const TeamSection = () => {
   const teamMembers = [
@@ -65,65 +65,17 @@ const TeamSection = () => {
   ];
 
   return (
-    <section id="team" className="section-padding bg-gradient-to-br from-white via-blue-50 to-blue-100">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="section-title animate-slide-up opacity-0">Our Leadership Team</h2>
-          <p className="section-subtitle animate-slide-up opacity-0 animation-delay-100">
-            Meet our experienced leadership team driving innovation and excellence across all business domains.
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up opacity-0 animation-delay-200">
-          {teamMembers.map((member, index) => (
-            <Link
-              key={member.id}
-              to={`/team/${member.id}`}
-              className="group block"
-            >
-              <Card className="h-full bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-105">
-                <CardContent className="p-8 text-center">
-                  <div className="relative mb-6">
-                    <Avatar className="w-32 h-32 mx-auto border-4 border-white shadow-lg">
-                      <AvatarImage src={member.image} alt={member.name} />
-                      <AvatarFallback className="bg-gradient-to-br from-brand-blue to-brand-green text-white text-lg font-semibold">
-                        {member.initials}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div className="absolute -top-2 -right-2 bg-brand-green text-white text-xs px-2 py-1 rounded-full font-medium">
-                      {member.position.split(' ').map(word => word.charAt(0)).join('')}
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-green transition-colors">
-                    {member.name}
-                  </h3>
-                  
-                  <p className="text-brand-blue font-semibold mb-2">
-                    {member.position}
-                  </p>
-                  
-                  {member.qualifications && (
-                    <p className="text-sm text-brand-gray font-medium mb-3">
-                      {member.qualifications}
-                    </p>
-                  )}
-                  
-                  <p className="text-brand-gray text-sm leading-relaxed">
-                    {member.description}
-                  </p>
-                  
-                  <div className="mt-6 text-brand-blue group-hover:text-brand-green transition-colors">
-                    <span className="text-sm font-medium">View Profile →</span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+    <section id="team" className="section-padding border-t border-border">
+      <div className="container px-5 md:px-8">
+        <div className="section-heading"><div><p className="eyebrow">05 / The people behind the progress</p><h2 className="section-title">Expert minds.<br /><span className="text-muted-foreground">Shared ambition.</span></h2><p className="section-subtitle">Meet the leadership team connecting expertise, innovation and excellence.</p></div></div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {teamMembers.map(member => <Link key={member.id} to={`/team/${member.id}`} className="group border border-border rounded-lg overflow-hidden bg-card transition-colors hover:border-primary/50">
+            <div className="bg-muted px-6 pt-6"><Avatar className="w-full h-auto aspect-[4/3] rounded-none"><AvatarImage src={member.image} alt={member.name} className="object-cover object-top" /><AvatarFallback className="rounded-none bg-muted text-primary text-4xl">{member.initials}</AvatarFallback></Avatar></div>
+            <div className="p-6"><p className="text-primary text-xs mb-3">{member.position}</p><h3 className="text-lg leading-snug mb-3">{member.name}</h3>{member.qualifications && <p className="text-xs text-muted-foreground mb-3">{member.qualifications}</p>}<p className="text-sm text-muted-foreground leading-relaxed mb-5">{member.description}</p><span className="inline-flex items-center gap-2 text-sm group-hover:text-primary">View profile <ArrowUpRight className="h-4 w-4" /></span></div>
+          </Link>)}
         </div>
       </div>
     </section>
   );
 };
-
 export default TeamSection;

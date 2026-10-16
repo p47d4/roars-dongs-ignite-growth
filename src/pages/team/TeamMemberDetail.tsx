@@ -175,7 +175,7 @@ const TeamMemberDetail = () => {
 
   if (!member) {
     return (
-      <div className="min-h-screen pt-20 flex items-center justify-center">
+      <div className="page-shell flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-brand-navy mb-4">Team Member Not Found</h1>
           <Link to="/team" className="text-brand-blue hover:text-brand-green">
@@ -187,8 +187,8 @@ const TeamMemberDetail = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20">
-      <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100">
+    <div className="page-shell">
+      <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6 py-16">
           <Link 
             to="/team" 
@@ -201,11 +201,11 @@ const TeamMemberDetail = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Profile Card */}
             <div className="lg:col-span-1">
-              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
+              <Card className="bg-card border-border">
                 <CardContent className="p-8 text-center">
-                  <Avatar className="w-35 h-35 mx-auto border-4 border-white shadow-lg mb-6">
+                  <Avatar className="w-40 h-40 mx-auto border-4 border-border shadow-lg mb-6">
                     <AvatarImage src={member.image} alt={member.name} />
-                    <AvatarFallback className="bg-gradient-to-br from-brand-blue to-brand-green text-white text-2xl font-semibold">
+                    <AvatarFallback className="bg-muted text-foreground text-2xl font-semibold">
                       {member.initials}
                     </AvatarFallback>
                   </Avatar>
@@ -220,7 +220,7 @@ const TeamMemberDetail = () => {
                   <div className="space-y-4">
                     <a 
                       href={`mailto:${member.email}`} 
-                      className="flex items-center justify-center gap-3 bg-brand-blue/10 hover:bg-brand-blue/20 p-3 rounded-lg transition-colors"
+                      className="flex items-center justify-center gap-3 bg-muted hover:bg-accent p-3 rounded-lg transition-colors break-all text-sm"
                     >
                       <Mail className="h-5 w-5 text-brand-blue" />
                       <span className="text-brand-navy">{member.email}</span>
@@ -236,7 +236,7 @@ const TeamMemberDetail = () => {
                     
                     <a 
                       href={member.linkedin} 
-                      className="flex items-center justify-center gap-3 bg-brand-blue/10 hover:bg-brand-blue/20 p-3 rounded-lg transition-colors"
+                      className="flex items-center justify-center gap-3 bg-muted hover:bg-accent p-3 rounded-lg transition-colors break-all text-sm"
                     >
                       <Linkedin className="h-5 w-5 text-brand-blue" />
                       <span className="text-brand-navy">LinkedIn Profile</span>
@@ -249,7 +249,7 @@ const TeamMemberDetail = () => {
             {/* Details */}
             <div className="lg:col-span-2 space-y-8">
               {/* Bio */}
-              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+              <Card className="bg-card border-border">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-brand-navy mb-4">About</h2>
                   <p className="text-brand-gray leading-relaxed">{member.bio}</p>
@@ -257,7 +257,7 @@ const TeamMemberDetail = () => {
               </Card>
 
               {/* Expertise */}
-              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+              <Card className="bg-card border-border">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-brand-navy mb-6">Areas of Expertise</h2>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -273,14 +273,14 @@ const TeamMemberDetail = () => {
 
               {/* Experience & Education */}
               <div className="grid md:grid-cols-2 gap-8">
-                <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                <Card className="bg-card border-border">
                   <CardContent className="p-8">
                     <h2 className="text-xl font-bold text-brand-navy mb-4">Experience</h2>
                     <p className="text-brand-gray">{member.experience}</p>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                <Card className="bg-card border-border">
                   <CardContent className="p-8">
                     <h2 className="text-xl font-bold text-brand-navy mb-4">Education</h2>
                     <p className="text-brand-gray">{member.education}</p>
@@ -290,7 +290,7 @@ const TeamMemberDetail = () => {
 
               {/* Professional Memberships (only for Abdulkarim) */}
               {member.memberships && (
-                <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                <Card className="bg-card border-border">
                   <CardContent className="p-8">
                     <h2 className="text-xl font-bold text-brand-navy mb-4">Professional Memberships</h2>
                     <ul className="space-y-2">

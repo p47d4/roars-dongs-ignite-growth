@@ -2,7 +2,7 @@ import TeamSection from '@/components/TeamSection';
 
 const Team = () => {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="page-shell">
       <TeamSection />
     </div>
   );
