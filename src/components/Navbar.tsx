@@ -1,123 +1,29 @@
-
-import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
+const links = [{ title: "Home", href: "/" }, { title: "About", href: "/about" }, { title: "Services", href: "/services" }, { title: "Projects", href: "/projects" }, { title: "Team", href: "/team" }];
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const location = useLocation();
-
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+  useEffect(() => { setOpen(false); }, [pathname]);
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    const close = (event: KeyboardEvent) => { if (event.key === "Escape") setOpen(false); };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
   }, []);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
-
-  const navLinks = [
-    { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
-    { title: "Services", href: "/services" },
-    { title: "Projects", href: "/projects" },
-    { title: "Team", href: "/team" },
-    { title: "Contact", href: "/contact" },
-  ];
-
-  const isActiveRoute = (href: string) => {
-    return location.pathname === href;
-  };
-
-  return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 py-2"
-          : "bg-transparent py-4"
-      }`}
-    >
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center group">
-            <div className="relative">
-              <img
-                src="/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png"
-                alt="Roars & Dongs Logo"
-                className="h-12 mr-3 transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
-            </div>
-            <span className="self-center text-xl font-bold whitespace-nowrap bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Roars & Dongs
-            </span>
-          </Link>
-          
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.title}
-                to={link.href}
-                className={`relative px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
-                  isActiveRoute(link.href)
-                    ? "bg-primary text-primary-foreground shadow-md"
-                    : "text-foreground hover:bg-primary/10 hover:text-primary"
-                }`}
-              >
-                {link.title}
-                {isActiveRoute(link.href) && (
-                  <div className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
-                )}
-              </Link>
-            ))}
-          </div>
-          
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 rounded-lg bg-primary/10 text-primary transition-all duration-300 hover:bg-primary/20"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-        
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden mt-4 py-6 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-gray-100 animate-slide-down">
-            <div className="flex flex-col space-y-2 px-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  to={link.href}
-                  className={`px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
-                    isActiveRoute(link.href)
-                      ? "bg-primary text-primary-foreground shadow-md"
-                      : "text-foreground hover:bg-primary/10 hover:text-primary"
-                  }`}
-                  onClick={toggleMobileMenu}
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
+  return <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-xl">
+    <nav aria-label="Main navigation" className="container flex h-20 items-center justify-between gap-6 px-5 md:px-8">
+      <Link to="/" aria-label="Roars & Dongs home" className="flex items-center gap-3 shrink-0">
+        <img src="/lovable-uploads/e754def4-306b-4407-abec-5504e0acc654.png" alt="" className="h-10 w-10 object-contain" />
+        <span className="text-base md:text-lg font-semibold">Roars & Dongs<span className="block text-[9px] text-muted-foreground uppercase tracking-widest">Limited · Nigeria</span></span>
+      </Link>
+      <div className="hidden lg:flex items-center gap-1">{links.map(link => <Button key={link.href} asChild variant="ghost" className={pathname === link.href || (link.href === "/" && pathname === "/index") ? "text-primary" : "text-muted-foreground"}><Link to={link.href} aria-current={pathname === link.href ? "page" : undefined}>{link.title}</Link></Button>)}</div>
+      <Button asChild className="hidden lg:inline-flex"><Link to="/contact">Let’s talk <ArrowUpRight /></Link></Button>
+      <Button variant="ghost" size="icon" className="lg:hidden" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
     </nav>
-  );
+    {open && <nav id="mobile-navigation" aria-label="Mobile navigation" className="lg:hidden border-t border-border bg-background px-5 py-5 animate-slide-down"><div className="container flex flex-col items-stretch gap-2 p-0">{[...links, { title: "Contact", href: "/contact" }].map(link => <Button asChild key={link.href} variant="ghost" className="justify-start h-12"><Link to={link.href}>{link.title}</Link></Button>)}</div></nav>}
+  </header>;
 };
-
 export default Navbar;

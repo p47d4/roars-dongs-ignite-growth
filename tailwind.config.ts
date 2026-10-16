@@ -65,11 +65,11 @@ export default {
 				},
 				// Custom colors based on Roars & Dongs logo
 				brand: {
-					green: '#00A651',
-					blue: '#0054A6',
-					navy: '#001F54',
-					lightGray: '#f8f9fa',
-					gray: '#6c757d'
+					green: 'hsl(var(--primary))',
+					blue: 'hsl(var(--secondary))',
+					navy: 'hsl(var(--foreground))',
+					lightGray: 'hsl(var(--card))',
+					gray: 'hsl(var(--muted-foreground))'
 				}
 			},
 			borderRadius: {
